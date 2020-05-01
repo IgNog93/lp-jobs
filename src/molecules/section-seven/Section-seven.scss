@@ -159,10 +159,10 @@
                         max-height: 0px;
                         margin: 0 !important;
                         pointer-events: none;
-                        transition: opacity 1.5s ease, max-height 1s ease-out;
+                        transition: opacity 2s ease-out, max-height 2s ease-out;
                         &.opened {
                             opacity: 1;
-                            transition: opacity 1.5s ease, max-height 1s ease-out;
+                            transition: opacity 2s ease-out, max-height 2s ease-out;
                             max-height: 2000px;
                             pointer-events: initial;
                         }

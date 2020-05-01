@@ -17,7 +17,7 @@ class NavMenu extends Component {
                 <li>Quem somos</li>
                 <li>Nosso jeito de trabalhar</li>
                 <li>
-                    <Link to='#section-four'>
+                    <Link to='#section-five'>
                     <button href='#wehire' >We’re hiring</button>
                     </Link>
                 </li>
