@@ -2,6 +2,11 @@ body {
     font-family: 'Roboto';
     button {
         cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover {
+            opacity: .8 !important;
+            transition: all .3s ease-in-out;
+        }
     }
 
     nav, #section-one, #section-two {

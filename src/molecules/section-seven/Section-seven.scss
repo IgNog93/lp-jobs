@@ -48,6 +48,9 @@
                 opacity: 1;
                 margin-bottom: 21px;
                 padding: 26px 52px;
+                &.clickable{
+                    cursor: pointer;
+                }
                 .job-opening {
                     display: flex;
                     flex-direction: column;
@@ -78,6 +81,7 @@
                         margin: 0;
                         line-height: 45px;
                     }
+
                     .more-info, .more-info div {
                         flex-direction: column;
                         align-items: flex-start;
@@ -122,6 +126,20 @@
                             font-weight: bold;
                             border: none;
                             margin: 40px 0 20px;
+                        }
+                    }
+
+                    .more-info {
+                        opacity: 0;
+                        max-height: 0px;
+                        margin: 0 !important;
+                        pointer-events: none;
+                        transition: opacity 2s ease, max-height 1s ease;
+                        &.opened {
+                            opacity: 1;
+                            transition: opacity 2s ease, max-height 1s ease;
+                            max-height: 815px;
+                            pointer-events: initial;
                         }
                     }
                 }

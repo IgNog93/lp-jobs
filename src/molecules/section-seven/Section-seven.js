@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
 import './Section-seven.scss'
 
+
 class SectionSeven extends Component {
+    constructor(){
+        super()
+        this.state = {
+          showMore: false
+        }
+      }
+
+    jobClick = () => {
+        const job = document.querySelector('.job')
+
+        job.classList.toggle('clickable')
+    }
+
+    showMore = () => {
+        this.setState({
+            showMore: true
+        })
+        this.jobClick()
+    }
+
     render() {
+        const { showMore } = this.state
         return (
             <section id='section-seven'>
                 <div className='title-wrapper'>
@@ -51,7 +73,7 @@ class SectionSeven extends Component {
                     <div className='area'>
                         <p className='title'>Tecnologia & Produto</p>
                         <ul className='jobs-list'>
-                            <li className='job'>
+                            <li className='job clickable' onClick={() => { this.showMore() }}>
                                 <div className='job-opening'>
                                     <p className='posted'>Vaga aberta em <span>9</span> de <span>janeiro</span> de <span>2020</span></p>
                                     <p className='position'>Product manager</p>
@@ -60,7 +82,7 @@ class SectionSeven extends Component {
                                         <p>&nbsp;&nbsp;•&nbsp;&nbsp;</p>
                                         <p className='routine'>Tempo Integral</p>
                                     </div>
-                                    <div className='more-info'>
+                                    <div className={`more-info ${(showMore === true) ? 'opened' : 'closed'}`}>
                                         <div className='job-description'>
                                             <p className='title'>Descrição da vaga</p>
                                             <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
