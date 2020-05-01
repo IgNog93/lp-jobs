@@ -6,6 +6,10 @@ class NavMenu extends Component {
     render() {
         return (
             <nav>
+                <div className='bkgd'>
+                    <figure className='background'></figure>
+                    <figure className='background-people'></figure>
+                </div>
                 <div className='logo-wrapper'>
                     <figure></figure>
                 </div>

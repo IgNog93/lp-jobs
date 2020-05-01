@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from '../../forms/ApplicationForm'
 import './Section-seven.scss'
 
 
@@ -6,7 +7,8 @@ class SectionSeven extends Component {
     constructor(){
         super()
         this.state = {
-          showMore: false
+          showMore: false,
+          applicationForm: false
         }
       }
 
@@ -23,8 +25,15 @@ class SectionSeven extends Component {
         this.jobClick()
     }
 
+    applyButton = () => {
+        this.setState({
+            applicationForm: true
+        })
+    }
+
     render() {
         const { showMore } = this.state
+        const { applicationForm } = this.state
         return (
             <section id='section-seven'>
                 <div className='title-wrapper'>
@@ -108,7 +117,15 @@ class SectionSeven extends Component {
                                                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
                                             </ul>
                                         </div>
-                                        <button>Quero me candidatar!</button>
+                                        <section id='application-form' className={` ${(applicationForm === true) ? 'opened' : 'closed'}`}>
+                                            <form>
+                                                <p>Preencha os dados abaixo</p>
+                                                <input></input>
+                                                <input></input>
+                                                <input></input>
+                                            </form>
+                                        </section>
+                                        <button onClick={() => { this.applyButton() }}>Quero me candidatar!</button>
                                     </div>
                                 </div>
                             </li>
