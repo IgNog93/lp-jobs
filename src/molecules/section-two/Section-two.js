@@ -7,10 +7,7 @@ class SectionTwo extends Component {
             <section id='section-two'>
                 <div className='left-content'>
                     <p className='title'>Somos a SAMI</p>
-                    <p className='text'>Uma startup formada de
-                    <br/> pessoas com o sonho grande de
-                    <br/> tornar a Saúde descomplicada,
-                    <br/> humana e eficaz.</p>
+                    <p className='text'>Uma startup formada de pessoas com o sonho grande de tornar a Saúde descomplicada, humana e eficaz.</p>
                 </div>
                 <div className='right-content'>
                     <p className='text'>Estamos reunindo as melhores práticas da Medicina,

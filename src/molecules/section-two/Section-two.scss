@@ -38,7 +38,8 @@
     }
     .right-content {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        margin: 16px;
         .text {
             text-align: left;
             font-size: 16px;
