@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Navigation.scss'
 
 class NavMenu extends Component {
@@ -12,7 +13,9 @@ class NavMenu extends Component {
                 <li>Quem somos</li>
                 <li>Nosso jeito de trabalhar</li>
                 <li>
+                    <Link to='#section-four'>
                     <button href='#wehire' >We’re hiring</button>
+                    </Link>
                 </li>
                 </ul>
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Section-five.scss'
 
 class SectionFive extends Component {
@@ -17,7 +18,9 @@ class SectionFive extends Component {
                     </p>
                 </div>
                 <div className='btn-wrapper'>
-                    <button>Nossas vagas</button>
+                    <Link to='#section-seven'>
+                        <button>Nossas vagas</button>
+                    </Link>
                 </div>
             </section>
         )
