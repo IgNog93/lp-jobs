@@ -1,0 +1,178 @@
+#section-seven {
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title-wrapper{
+        margin-top: 40px;
+        .title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 45px;
+            letter-spacing: 0px;
+            color: #ACACAC;
+            text-transform: uppercase;
+            margin: 0;
+            &-bold {
+                font-weight: 700;
+                color: #00C8AA;
+                font-size: 40px;
+                letter-spacing: 0;
+                margin: 0;
+                line-height: 45px;
+            }
+        }
+    }
+    .jobs-wrapper{
+        width: 100%;
+        .area {
+            padding: 0px 11vw;
+            margin: 55px 0;
+        }
+        .title{
+            color: #00C8AA;
+            font-size: 30px;
+            letter-spacing: 0;
+            margin: 35px 0 25px;
+            line-height: 45px;
+        }
+        .jobs-list, ul {
+            list-style-type: none;
+            padding: 0;
+            .job {
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 5px 5px 10px #00000029;
+                border-radius: 24px;
+                opacity: 1;
+                margin-bottom: 21px;
+                padding: 26px 52px;
+                .job-opening {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    height: 100%;
+
+                    p {
+                        margin: 4px 0;
+                    }
+
+                    .posted, div p{
+                        text-align: center;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        color: #BCBCBC;
+                        opacity: 1;
+                    }
+                    div {
+                        display: flex;
+                    }
+                    .position {
+                        color: #00C8AA;
+                        font-size: 24px;
+                        letter-spacing: 0;
+                        margin: 0;
+                        line-height: 45px;
+                    }
+                    .more-info, .more-info div {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin: 15px 0;
+
+                        .job-description {
+                            .text {
+                                width: 85%;
+                            }
+                        }
+
+                        ul {
+                            list-style-type: disc;
+                            padding-left: 40px;
+                            margin: 15px 0px;
+                        }
+                        .title {
+                            text-align: left;
+                            letter-spacing: 0px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #707070;
+                            line-height: 24px;
+                            opacity: 1;
+                        }
+                        .text, .text li {
+                            text-align: left;
+                            font-size: 16px;
+                            letter-spacing: 0px;
+                            line-height: 24px;
+                            color: #ACACAC;
+                            opacity: 1;
+                        }
+                        button{
+                            background: transparent linear-gradient(258deg, #1E99D5 0%, #02C3AD 100%) 0% 0% no-repeat padding-box;
+                            box-shadow: 3px 3px 6px #00000036;
+                            border-radius: 25px;
+                            opacity: 1;
+                            padding: 16px 70px;
+                            color: #FFFFFF;
+                            font-size: 16px;
+                            font-weight: bold;
+                            border: none;
+                            margin: 40px 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#email-section {
+    margin: -20px 0 30px;
+    width: 100%;
+    .content {
+        padding: 0 11vw;
+        .text-wrapper {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 5px 5px 10px #00000029;
+            border-radius: 24px;
+            opacity: 1;
+            margin-bottom: 21px;
+            padding: 26px 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title {
+                color: #00C8AA;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0;
+                margin: 0;
+            }
+            .text{
+                text-align: left;
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 200;
+                letter-spacing: 0px;
+                color: #707070;
+                margin: 4px 0 0;
+            }
+            button {
+                background: transparent linear-gradient(258deg, #1E99D5 0%, #02C3AD 100%) 0% 0% no-repeat padding-box;
+                box-shadow: 3px 3px 6px #00000036;
+                border-radius: 25px;
+                opacity: 1;
+                padding: 16px 70px;
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                margin: 30px 0
+            }
+        }
+    }
+}

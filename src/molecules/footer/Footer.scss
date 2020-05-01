@@ -1,0 +1,91 @@
+#footer {
+    background: transparent linear-gradient(261deg, #2F80ED 0%, #00C8AA 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 200px;
+    padding: 10px 143px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        figure {
+            background: url(../../assets/sami-logo-w.svg) center center no-repeat;
+            background-size: contain;
+            width: 133px;
+            height: 46px;
+        }
+    }
+    .about-us, .social-media {
+        text-align: left;
+        font-family: Helvetica;;
+        line-height: 30px;
+        letter-spacing: 0px;
+        height: 100%;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        .text {
+            font-size: 16px
+        }
+    }
+    .about-us {
+        margin-right: 200px;
+        .text {
+            margin-top: 4px;
+        }
+    }
+    .social-media{
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 20px 0;
+            li {
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 17px;
+                opacity: 1;
+                height: 68px;
+                width: 68px;
+                margin: 0 5px;
+                cursor: pointer;
+
+                figure {
+                    width: 12px;
+                    height: 24px;
+                    width: 68px;
+                    height: 68px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin: 0;
+                }
+
+                &:nth-of-type(1){
+                    figure{
+                    background: url(../../assets/facebook.svg) center center no-repeat;
+                    }
+                }
+                &:nth-of-type(2){
+                    figure {
+                    background: url(../../assets/linkedin.svg) center center no-repeat;
+                    }
+                }
+                &:nth-of-type(3){
+                    figure {
+                    background-position-y: -5px !important;
+                    background-size: 60px 60px !important;
+                    background: url(../../assets/instagram@2.png) center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
