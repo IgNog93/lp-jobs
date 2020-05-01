@@ -12,7 +12,7 @@ class NavMenu extends Component {
                 <li>Quem somos</li>
                 <li>Nosso jeito de trabalhar</li>
                 <li>
-                    <button>We’re hiring</button>
+                    <button href='#wehire' >We’re hiring</button>
                 </li>
                 </ul>
 

@@ -11,9 +11,9 @@ class SectionSeven extends Component {
       }
 
     jobClick = () => {
-        const job = document.querySelector('.job')
+        const job = document.querySelector('#job')
 
-        job.classList.toggle('clickable')
+        job.classList.remove('clickable')
     }
 
     showMore = () => {
@@ -31,6 +31,7 @@ class SectionSeven extends Component {
                     <p className='title'>vem pra sami</p>
                     <p className='title-bold'>Nossas vagas</p>
                 </div>
+                <a name='wehire'></a>
                 <div className='jobs-wrapper'>
                     <div className='area'>
                         <p className='title'>Marketing & Vendas</p>
@@ -73,7 +74,7 @@ class SectionSeven extends Component {
                     <div className='area'>
                         <p className='title'>Tecnologia & Produto</p>
                         <ul className='jobs-list'>
-                            <li className='job clickable' onClick={() => { this.showMore() }}>
+                            <li id='job' className='job clickable' onClick={() => { this.showMore() }}>
                                 <div className='job-opening'>
                                     <p className='posted'>Vaga aberta em <span>9</span> de <span>janeiro</span> de <span>2020</span></p>
                                     <p className='position'>Product manager</p>
