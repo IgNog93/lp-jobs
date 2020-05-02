@@ -9,8 +9,17 @@ class SectionSeven extends Component {
           showMore: false,
           applicationForm: false,
           copyEmail: false,
+          name: '',
+          linkedin: ''
         }
       }
+
+    handleInput = e => {
+    const input = e.target
+    this.setState({
+        [input.name]: input.value
+    })
+    }
 
     jobClick = () => {
         const job = document.querySelector('#job')
@@ -48,10 +57,13 @@ class SectionSeven extends Component {
         }, 3000);
     }
 
+    copyingEmail = () => {navigator.clipboard.writeText('recrutamento@oisami.com')}
+
     copyEmail = () => {
         this.setState({
             copyEmail: true
         })
+        this.copyingEmail()
         this.restartCopy()
     }
 
@@ -145,9 +157,18 @@ class SectionSeven extends Component {
                                         <section id='application-form' className={` ${(applicationForm === true) ? 'opened' : 'closed'}`}>
                                             <form>
                                                 <p>Preencha os dados abaixo</p>
-                                                <input placeholder='Qual é o seu nome completo?'></input>
-                                                <input placeholder='Linkedin'></input>
-                                                <input readOnly placeholder='Anexe seu CV'></input>
+                                                <div className='input-wrap'>
+                                                    <input className={`${(this.state.name.length > 0 ? 'active' : '')}`} name='name' id='name' onChange={this.handleInput} defaultValue={this.state.name}></input>
+                                                    <label for='name' htmlFor='name'>Qual é o seu nome completo?</label>
+                                                </div>
+                                                <div className='input-wrap'>
+                                                    <input className={`${(this.state.linkedin.length > 0 ? 'active' : '')}`} name='linkedin' id='linkedin' onChange={this.handleInput} defaultValue={this.state.linkedin}></input>
+                                                    <label for='linkedin' htmlFor='linkedin'>Linkedin</label>
+                                                </div>
+                                                <div className='input-wrap'>
+                                                    <input readOnly name='cv' placeholder='Anexe seu CV'></input>
+                                                    <label for='cv'></label>
+                                                </div>
                                                 <span></span>
                                             </form>
                                         </section>
