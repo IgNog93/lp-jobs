@@ -45,12 +45,18 @@ nav {
         align-items: center;
         width: 100%;
         li {
-            margin: 0 15px;
+            margin: 0 1vw;
             text-align: left;
             letter-spacing: 0px;
             color: #ACACAC;
             opacity: 1;
             font-size: 14px;
+            transition: all .3s ease;
+            &:hover{
+                color: #707070;
+                cursor: pointer;
+                transition: all .3s ease;
+            }
         }
     }
     button {
