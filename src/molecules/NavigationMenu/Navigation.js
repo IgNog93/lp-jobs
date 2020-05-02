@@ -3,6 +3,15 @@ import { HashLink as Link } from 'react-router-hash-link';
 import './Navigation.scss'
 
 class NavMenu extends Component {
+
+    componentDidMount(){
+        setTimeout(() => {
+            const load = document.querySelector('#root')
+
+            load.classList.remove('loading')
+        }, 500)
+    }
+
     render() {
         return (
             <nav>
@@ -22,7 +31,6 @@ class NavMenu extends Component {
                     </Link>
                 </li>
                 </ul>
-
             </nav>
         )
     }
