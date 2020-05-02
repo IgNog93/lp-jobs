@@ -1,15 +1,19 @@
-body {
-    font-family: 'Roboto';
-    button {
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-        &:hover {
-            opacity: .8 !important;
-            transition: all .3s ease-in-out;
+html {
+    scroll-behavior: smooth !important;
+    body {
+        font-family: 'Roboto';
+        button {
+            cursor: pointer;
+            transition: all .1s ease-in;
+            &:hover {
+                opacity: 0.9 !important;
+                box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
+                transition: all .2s ease-in-out;
+            }
         }
-    }
 
-    nav, #section-one, #section-two {
-        padding: 0 12vw;
+        nav, #section-one, #section-two {
+            padding: 0 12vw;
+        }
     }
 }

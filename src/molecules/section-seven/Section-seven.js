@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Form from '../../forms/ApplicationForm'
 import './Section-seven.scss'
 
 
@@ -8,7 +7,8 @@ class SectionSeven extends Component {
         super()
         this.state = {
           showMore: false,
-          applicationForm: false
+          applicationForm: false,
+          copyEmail: false,
         }
       }
 
@@ -31,9 +31,34 @@ class SectionSeven extends Component {
         })
     }
 
+    restartCopy = () => {
+        setTimeout(() => {
+            const emailCopied = document.querySelector('#email-copied')
+            const emailToCopy = document.querySelector('#email-to-copy')
+
+            emailCopied.classList.remove('opened')
+            emailCopied.classList.add('closed')
+            emailToCopy.classList.remove('closed')
+            emailToCopy.classList.add('opened')
+
+            this.setState({
+                copyEmail: false
+            })
+
+        }, 3000);
+    }
+
+    copyEmail = () => {
+        this.setState({
+            copyEmail: true
+        })
+        this.restartCopy()
+    }
+
     render() {
         const { showMore } = this.state
         const { applicationForm } = this.state
+        const { copyEmail } = this.state
         return (
             <section id='section-seven'>
                 <div className='title-wrapper'>
@@ -120,12 +145,14 @@ class SectionSeven extends Component {
                                         <section id='application-form' className={` ${(applicationForm === true) ? 'opened' : 'closed'}`}>
                                             <form>
                                                 <p>Preencha os dados abaixo</p>
-                                                <input></input>
-                                                <input></input>
-                                                <input></input>
+                                                <input placeholder='Qual é o seu nome completo?'></input>
+                                                <input placeholder='Linkedin'></input>
+                                                <input readOnly placeholder='Anexe seu CV'></input>
+                                                <span></span>
                                             </form>
                                         </section>
-                                        <button onClick={() => { this.applyButton() }}>Quero me candidatar!</button>
+                                        <button className={` apply-btn btn-before ${(applicationForm === false) ? 'opened' : 'closed'}`} onClick={() =>  this.applyButton()}>Quero me candidatar!</button>
+                                        <button className={` apply-btn btn-after ${(applicationForm === true) ? 'opened' : 'closed'}`} >Candidatar-se</button>
                                     </div>
                                 </div>
                             </li>
@@ -141,7 +168,8 @@ class SectionSeven extends Component {
                                 <br/>para novas vagas no futuro.</p>
                             </div>
                             <div>
-                                <button>recrutamento@oisami.com</button>
+                                <button id='email-to-copy' className={` copy-email ${(copyEmail === false) ? 'opened' : 'closed'}`} onClick={() =>  this.copyEmail()}>recrutamento@oisami.com</button>
+                                <button id='email-copied' className={` copy-email ${(copyEmail === true) ? 'opened' : 'closed'}`} ><span></span>copiado</button>
                             </div>
                         </div>
                     </div>

@@ -134,15 +134,15 @@
                         max-height: 0px;
                         margin: 0 !important;
                         pointer-events: none;
-                        transition: opacity 1.5s ease, max-height 1s ease-out;
+                        transition: opacity 1.75s ease, max-height 1.25s ease-in;
                         &.opened {
                             opacity: 1;
-                            transition: opacity 1.5s ease, max-height 1s ease-out;
+                            transition: opacity 1.75s ease, max-height 1.25s ease-in;
                             max-height: 2000px;
                             pointer-events: initial;
                             div {
                                 opacity: 1;
-                                transition: opacity 1.5s ease, max-height 1s ease-out;
+                                transition: opacity 1.75s ease, max-height 1.25s ease-in;
                                 max-height: initial;
                                 pointer-events: initial;
                                 margin-top: 25px !important;
@@ -150,6 +150,12 @@
                         }
                         button {
                             margin: 40px 0;
+                            &.opened{
+                                display: block;
+                            }
+                            &.closed{
+                                display: none !important;
+                            }
                         }
                     }
 
@@ -159,16 +165,17 @@
                         max-height: 0px;
                         margin: 0 !important;
                         pointer-events: none;
-                        transition: opacity 2s ease-out, max-height 2s ease-out;
+                        transition: opacity 1.75s ease, max-height 1.25s ease-in;
                         &.opened {
                             opacity: 1;
-                            transition: opacity 2s ease-out, max-height 2s ease-out;
+                            transition: opacity 1.75s ease, max-height 1.25s ease-in;
                             max-height: 2000px;
                             pointer-events: initial;
                         }
                         form {
                             display: flex;
                             flex-direction: column;
+                            position: relative;
                             p {
                                 text-align: left;
                                 letter-spacing: 0px;
@@ -180,13 +187,40 @@
                                 margin: 20px 0;
                             }
                             input {
-                                height: 63px;
+                                height: 24px;
                                 background: #FFFFFF 0% 0% no-repeat padding-box;
                                 box-shadow: 0px 3px 6px #00000029;
                                 border-radius: 42px;
                                 opacity: 1;
                                 border: none;
                                 margin: 15px 0;
+                                padding: 20px 45px;
+                                text-align: left;
+                                letter-spacing: 0px;
+                                color: #000000;
+                                opacity: 1;
+                                font-family: 'Roboto';
+                                font-size: 16px;
+                                line-height: 24px;
+                                &::placeholder{
+                                    color: #A3A3A3;
+                                }
+                                &:last-of-type{
+                                    cursor: pointer;
+                                    &:hover{
+                                        box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
+                                        transition: all .2s ease-in-out;
+                                    }
+                                }
+                            }
+                            span {
+                                background: url(../../assets/multimedia-option.svg) center center no-repeat;
+                                width: 30px;
+                                height: 30px;
+                                position: absolute;
+                                bottom: 3.5vh;
+                                right: 3vh;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -237,7 +271,41 @@
                 font-size: 16px;
                 font-weight: bold;
                 border: none;
-                margin: 30px 0
+                margin: 30px 0;
+                width: 350px;
+                height: 50px;
+                transition: all 1s ease-out;
+                transform: rotateX(45deg);
+                &:focus{
+                    outline: none;
+                }
+                &:nth-of-type(2) {
+                    background: #1ED588 0% 0% no-repeat padding-box;
+                    transition: opacity 1s ease-out;
+                    span {
+                        background: url(../../assets/correct.svg) center center no-repeat;
+                        background-size: contain;
+                        padding: 13px;
+                        margin-right: 20px;
+                    }
+                }
+                &.opened{
+                    opacity: 1;
+                    max-height: 50px;
+                    max-width: 350px;
+                    transition: all .6s ease-out;
+                    transform: rotateX(0deg);
+                }
+                &.closed{
+                    position: absolute;
+                    transition: opacity 1s ease-out;
+                    transform: rotateX(90deg);
+                    &:hover {
+                        opacity: 0 !important;
+                        max-height: 0px;
+                        padding: 0;
+                    }
+                }
             }
         }
     }
