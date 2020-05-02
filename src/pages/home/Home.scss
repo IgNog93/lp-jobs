@@ -2,7 +2,12 @@ html {
     scroll-behavior: smooth !important;
     body {
         font-family: 'Roboto';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         #root {
+            max-width: 1980px;
             &.loading{
                 opacity: 0;
             }

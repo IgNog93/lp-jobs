@@ -159,15 +159,15 @@ class SectionSeven extends Component {
                                                 <p>Preencha os dados abaixo</p>
                                                 <div className='input-wrap'>
                                                     <input className={`${(this.state.name.length > 0 ? 'active' : '')}`} name='name' id='name' onChange={this.handleInput} defaultValue={this.state.name}></input>
-                                                    <label for='name' htmlFor='name'>Qual é o seu nome completo?</label>
+                                                    <label htmlFor='name'>Qual é o seu nome completo?</label>
                                                 </div>
                                                 <div className='input-wrap'>
                                                     <input className={`${(this.state.linkedin.length > 0 ? 'active' : '')}`} name='linkedin' id='linkedin' onChange={this.handleInput} defaultValue={this.state.linkedin}></input>
-                                                    <label for='linkedin' htmlFor='linkedin'>Linkedin</label>
+                                                    <label htmlFor='linkedin'>Linkedin</label>
                                                 </div>
                                                 <div className='input-wrap'>
                                                     <input readOnly name='cv' placeholder='Anexe seu CV'></input>
-                                                    <label for='cv'></label>
+                                                    <label htmlFor='cv'></label>
                                                 </div>
                                                 <span></span>
                                             </form>

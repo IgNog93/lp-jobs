@@ -2,9 +2,9 @@ nav {
     display: flex;
     margin-top: 20px;
     .bkgd {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
+        top: -20px;
+        left: -12vw;
         .background {
             background-image: url(../../assets/rounded-bg-lp.svg);
             position: absolute;
@@ -28,7 +28,7 @@ nav {
         }
     }
     .logo-wrapper {
-        width: 100%;
+        position: absolute;
         figure {
             background: url(../../assets/sami-logo-w.svg) center center no-repeat;
             width: 133px;
