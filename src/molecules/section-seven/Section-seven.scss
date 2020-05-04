@@ -229,7 +229,11 @@
                                 &:last-of-type{
                                     input, label{
                                         cursor: pointer !important;
-                                        padding-left: 24px
+                                        @media only screen and (max-width: 1290px) {
+                                            padding-left: 24px;
+                                            width: 77%;
+                                            padding-right: 24px;
+                                        }
                                     }
                                 }
                             }
@@ -305,7 +309,7 @@
                                 cursor: pointer;
                                 @media only screen and (max-width: 1290px) {
                                     bottom: 28px;
-                                    right: 17vw;
+                                    right: 11vw;
                                 }
                             }
                         }
