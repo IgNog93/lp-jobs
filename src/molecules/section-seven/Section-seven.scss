@@ -436,3 +436,18 @@
         padding-top: 12px;
     }
 }
+
+.topback{
+    button {
+        background: transparent linear-gradient(258deg, #1E99D5 0%, #02C3AD 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 3px 3px 6px #00000036;
+        border-radius: 100px;
+        color: #FFFFFF;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 24px 96px;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Section-seven.scss'
 
 
@@ -194,6 +195,11 @@ class SectionSeven extends Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='topback'>
+                    <Link to='#root'>
+                    <button>voltar ao topo</button>
+                    </Link>
                 </div>
             </section>
         )
