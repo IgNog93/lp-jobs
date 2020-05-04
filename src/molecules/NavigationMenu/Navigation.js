@@ -23,7 +23,7 @@ class NavMenu extends Component {
                     <figure></figure>
                 </div>
                 <ul>
-                <Link to='#section-four'>
+                <Link to='#section-two'>
                     <li href='#wehire'>Quem somos</li>
                 </Link>
                 <Link to='#section-three'>

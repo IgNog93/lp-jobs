@@ -1,8 +1,15 @@
 #section-two{
     display: flex;
     height: 350px;
+    @media only screen and (max-width: 1290px) {
+        flex-direction: column !important;
+        height: auto !important;
+    }
     div {
         width: 50%;
+        @media only screen and (max-width: 1290px) {
+            width: 100vw;
+        }
     }
 
     .left-content, .right-content {
@@ -24,6 +31,10 @@
             color: #CBCBCB;
             text-transform: uppercase;
             opacity: 1;
+            @media only screen and (max-width: 1290px) {
+                padding-left: 20px;
+                width: 90%;
+            }
         }
         .text {
             text-align: left;
@@ -34,12 +45,20 @@
             color: #02C4AD;
             opacity: 1;
             margin: 0;
+            @media only screen and (max-width: 1290px) {
+                padding-left: 20px;
+                width: 90%;
+            }
         }
     }
     .right-content {
         display: flex;
         align-items: flex-start;
         margin: 16px;
+        @media only screen and (max-width: 1290px) {
+            height: auto;
+            margin: 0;
+        }
         .text {
             text-align: left;
             font-size: 16px;
@@ -47,6 +66,14 @@
             letter-spacing: 0px;
             color: #ACACAC;
             opacity: 1;
+            @media only screen and (max-width: 1290px) {
+                padding-left: 20px;
+                width: 90%;
+                margin-bottom: 50px;
+                text-align: left;
+                line-height: 28px;
+                font-size: 18px;
+            }
         }
     }
 }

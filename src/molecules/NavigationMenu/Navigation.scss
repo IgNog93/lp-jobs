@@ -5,6 +5,15 @@ nav {
         position: relative;
         top: -20px;
         left: -12vw;
+        @media only screen and (max-width: 1290px) {
+            position: initial;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
         .background {
             background-image: url(../../assets/rounded-bg-lp.svg);
             position: absolute;
@@ -15,6 +24,11 @@ nav {
             margin: 0;
             background-repeat: no-repeat;
             z-index: -1;
+            @media only screen and (max-width: 1290px) {
+                width: 100vw;
+                background-size: initial;
+                height: 600px;
+            }
         }
         .background-people {
             background-image: url(../../assets/grupo44.svg);
@@ -25,19 +39,35 @@ nav {
             height: 400px;
             margin: 0;
             background-repeat: no-repeat;
+            @media only screen and (max-width: 1290px) {
+                width: 80vw;
+                position: initial;
+                background-size: contain;
+                height: 300px;
+            }
         }
     }
     .logo-wrapper {
         position: absolute;
+        @media only screen and (max-width: 1290px) {
+            position: initial;
+            margin: 40px 0 60px;
+        }
         figure {
             background: url(../../assets/sami-logo-w.svg) center center no-repeat;
             width: 133px;
             height: 46px;
             background-size: cover;
             margin-left: 0;
+            @media only screen and (max-width: 1290px) {
+                margin-left: 40px;
+            }
         }
     }
     ul {
+        @media only screen and (max-width: 1290px) {
+            display: none;
+        }
         padding: 0;
         list-style-type: none;
         display: flex;

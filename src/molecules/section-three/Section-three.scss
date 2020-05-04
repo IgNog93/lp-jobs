@@ -8,6 +8,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 1290px) {
+        height: auto;
+    }
+        div {
+            @media only screen and (max-width: 1290px) {
+                width: 90%
+            }
+        }
         .title-wrapper{
             font-family: 'Montserrat', sans-serif;
             letter-spacing: 0px;
@@ -18,11 +26,19 @@
                 font-size: 16px;
                 text-transform: uppercase;
                 margin-bottom: 0;
+                @media only screen and (max-width: 1290px) {
+                    margin: 40px 0 30px;
+                }
             }
             .slogan{
                 font-size: 40px;
                 font-weight: bold;
                 margin-top: 0;
+                @media only screen and (max-width: 1290px) {
+                    text-align: left;
+                    padding-left: 20px;
+                    width: 90%;
+                }
             }
         }
         .text {
@@ -36,6 +52,9 @@
         .watermark-wrapper{
             position: relative;
             top: 45px;
+            @media only screen and (max-width: 1290px) {
+                position: initial;
+            }
             .watermark {
                 font-size: 94px;
                 line-height: 105px;
@@ -45,6 +64,15 @@
                 -webkit-text-stroke-color: #fff;
                 font-family: Montserrat, sans-serif;
                 font-weight: 700;
+                @media only screen and (max-width: 1290px) {
+                    font-size: 72px;
+                    line-height: 72px;
+                    padding-left: 5px;
+                }
+                @media only screen and (max-width: 350px) {
+                    font-size: 56px;
+                    line-height: 56px;
+                }
             }
         }
     }

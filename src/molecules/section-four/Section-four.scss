@@ -1,7 +1,21 @@
 #section-four {
     height: 500px;
     padding: 50px 12vw;
+    @media only screen and (max-width: 1290px) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
     .title-wrapper{
+        @media only screen and (max-width: 1290px) {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
         .title{
             text-align: left;
             font-family: 'Montserrat', sans-serif;
@@ -13,6 +27,9 @@
             text-transform: uppercase;
             opacity: 1;
             margin: 0;
+            @media only screen and (max-width: 1290px) {
+                margin: 40px 0 15px;
+            }
             &-bold{
                 font-weight: bold;
                 font-size: 40px;
@@ -23,6 +40,9 @@
     }
     .dots-wrapper {
         margin: 60px 0 120px;
+        @media only screen and (max-width: 1290px) {
+            margin: 0;
+        }
         .dots{
             padding: 0;
             list-style-type: none;
@@ -30,12 +50,17 @@
             justify-content: center;
             align-items: center;
             position: relative;
-
+            @media only screen and (max-width: 1290px) {
+                display: block;
+            }
             span {
                 border: solid 1px #E0E0E0;
                 width: 15%;
                 z-index: -1;
                 position: absolute;
+                @media only screen and (max-width: 1290px) {
+                    display: none;
+                }
                     &:nth-of-type(1) {
                         transform: rotate(20deg);
                         left: 14%;
@@ -65,9 +90,15 @@
                 align-items: center;
                 text-align: center;
                 margin: 0 50px;
+                @media only screen and (max-width: 1290px) {
+                    margin: 25px 50px;
+                }
                 &:nth-child(3), &:nth-child(7)  {
                     position: relative;
                     top: 75px;
+                    @media only screen and (max-width: 1290px) {
+                        position: initial;
+                    }
                 }
 
                 p {
@@ -145,5 +176,8 @@
         letter-spacing: 0px;
         color: #00C8AA;
         opacity: 1;
+        @media only screen and (max-width: 1290px) {
+            width: 100vw;
+        }
     }
 }
