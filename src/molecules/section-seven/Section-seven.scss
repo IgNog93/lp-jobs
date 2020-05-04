@@ -321,7 +321,7 @@
 }
 
 #email-section {
-    margin: -20px 0 30px;
+    margin: -20px 0 25px;
     width: 100%;
     @media only screen and (max-width: 1290px) {
         width: 100vw;
@@ -411,6 +411,7 @@
                     transform: rotateX(0deg);
                     @media only screen and (max-width: 1290px) {
                         max-width: 320px;
+                        margin-bottom: 15px;
                     }
                 }
                 &.closed{
