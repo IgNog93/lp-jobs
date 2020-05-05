@@ -7,37 +7,43 @@ class NavMenu extends Component {
 
     componentDidMount(){
         setTimeout(() => {
-            const load = document.querySelector('#root')
+            const loaded = document.querySelector('#loading')
 
-            load.classList.remove('loading')
+            loaded.classList.add('loaded')
             ScrollAnimation.navMenu()
-        }, 500)
+        }, 2000)
     }
 
     render() {
         return (
-            <nav>
-                <div className='bkgd'>
-                    <figure className='background'></figure>
-                    <figure className='background-people'></figure>
-                </div>
-                <div className='logo-wrapper'>
-                    <figure></figure>
-                </div>
-                <ul>
-                <Link to='#section-two'>
-                    <li href='#wehire'>Quem somos</li>
-                </Link>
-                <Link to='#section-three'>
-                    <li href='#wehire'>Nosso jeito de trabalhar</li>
-                </Link>
-                <li>
-                    <Link to='#section-five'>
-                    <button className='hiring-btn' href='#wehire' >We’re hiring</button>
+            <section id='nav'>
+                <nav>
+                    <div className='loading-wrapper'></div>
+                    <div id='loading' className=''>
+                        <div className='loader-img'></div>
+                    </div>
+                    <div className='bkgd'>
+                        <figure className='background'></figure>
+                        <figure className='background-people'></figure>
+                    </div>
+                    <div className='logo-wrapper'>
+                        <figure></figure>
+                    </div>
+                    <ul>
+                    <Link to='#section-two'>
+                        <li href='#wehire'>Quem somos</li>
                     </Link>
-                </li>
-                </ul>
-            </nav>
+                    <Link to='#section-three'>
+                        <li href='#wehire'>Nosso jeito de trabalhar</li>
+                    </Link>
+                    <li>
+                        <Link to='#section-five'>
+                        <button className='hiring-btn' href='#wehire' >We’re hiring</button>
+                        </Link>
+                    </li>
+                    </ul>
+                </nav>
+            </section>
         )
     }
 }

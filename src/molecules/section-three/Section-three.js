@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import './Section-three.scss'
 
 class SectionThree extends Component {
@@ -6,6 +7,7 @@ class SectionThree extends Component {
         return (
             <section id='section-three'>
                 <div className='content'>
+                <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
                     <div className='title-wrapper'>
                         <p className='title'>nosso jeito de trabalhar</p>
                         <p className='slogan'>Gente boa, gente amiga e
@@ -20,6 +22,7 @@ class SectionThree extends Component {
                     <div className='watermark-wrapper'>
                         <p className='watermark'>nosso jeito de trabalhar</p>
                     </div>
+                </Parallax>
                 </div>
             </section>
         )

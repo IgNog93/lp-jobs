@@ -8,9 +8,6 @@ html {
         flex-direction: column;
         #root {
             max-width: 1980px;
-            &.loading{
-                opacity: 0;
-            }
         }
         button {
             cursor: pointer;
