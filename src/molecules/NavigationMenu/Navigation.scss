@@ -3,8 +3,8 @@ nav {
     margin-top: 20px;
     #loading{
         position: fixed;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: #fff;
         z-index: 999999;
         top: 0;
@@ -20,7 +20,7 @@ nav {
             margin-left: -60px;
             background: url(../../assets/loader.svg) center center no-repeat;
             background-size: contain;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 margin-top: -45px;
                 margin-left: -45px;
             }
@@ -35,7 +35,7 @@ nav {
         position: relative;
         top: -20px;
         left: -12vw;
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             position: initial;
             height: 300px;
             display: flex;
@@ -54,7 +54,7 @@ nav {
             margin: 0;
             background-repeat: no-repeat;
             z-index: -1;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 width: 100vw;
                 background-size: initial;
                 height: 600px;
@@ -69,7 +69,7 @@ nav {
             height: 400px;
             margin: 0;
             background-repeat: no-repeat;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 width: 80vw;
                 position: initial;
                 background-size: contain;
@@ -79,7 +79,7 @@ nav {
     }
     .logo-wrapper {
         position: absolute;
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             position: initial;
             margin: 40px 0 60px;
         }
@@ -89,13 +89,13 @@ nav {
             height: 46px;
             background-size: cover;
             margin-left: 0;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 margin-left: 40px;
             }
         }
     }
     ul {
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             display: none;
         }
         padding: 0;

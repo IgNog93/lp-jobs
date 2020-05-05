@@ -13,7 +13,7 @@ class SectionTwo extends Component {
                     <p className='text'>Estamos reunindo as melhores práticas da Medicina,
                     <br/> repensando conceitos ultrapassados e investindo em bastante
                     <br/> tecnologia. E com muita, mas muita humildade e humanidade,
-                    <p id='anchor-2'></p>
+                    <span id='our-way'></span>
                     <br/> vamos oferecer um serviço de ponta e uma experiência
                     <br/> marcante com menor investimento para que mais pessoas
                     <br/> tenham acesso à Saúde.</p>

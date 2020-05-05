@@ -6,6 +6,7 @@ class SectionFive extends Component {
     render() {
         return (
             <section id='section-five'>
+                <span id='we-hiring'></span>
                 <div className='title-wrapper'>
                     <p className='title'>vem pra sami</p>
                     <p className='title-bold'>We’re hiring!</p>

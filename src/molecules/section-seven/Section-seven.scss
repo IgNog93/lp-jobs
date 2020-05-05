@@ -27,13 +27,13 @@
     }
     .jobs-wrapper{
         width: 100%;
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             width: 100vw;
         }
         .area {
             padding: 0px 11vw;
             margin: 55px 0;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 padding: 0px 20px;
             }
         }
@@ -43,7 +43,7 @@
             letter-spacing: 0;
             margin: 35px 0 25px;
             line-height: 45px;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 font-size: 24px;
                 line-height: 24px;
             }
@@ -58,7 +58,7 @@
                 opacity: 1;
                 margin-bottom: 21px;
                 padding: 26px 52px;
-                @media only screen and (max-width: 1290px) {
+                @media only screen and (max-width: 1289px) {
                     padding: 8px 16px;
                     }
                 &:hover{
@@ -74,7 +74,7 @@
                     align-items: flex-start;
                     justify-content: center;
                     height: 100%;
-                    @media only screen and (max-width: 1290px) {
+                    @media only screen and (max-width: 1289px) {
                         flex-direction: column;
                         width: 100%;
                     }
@@ -89,7 +89,7 @@
                         letter-spacing: 0px;
                         color: #BCBCBC;
                         opacity: 1;
-                        @media only screen and (max-width: 1290px) {
+                        @media only screen and (max-width: 1289px) {
                             font-size: 12px !important;
                         }
                     }
@@ -102,7 +102,7 @@
                         letter-spacing: 0;
                         margin: 0;
                         line-height: 45px;
-                        @media only screen and (max-width: 1290px) {
+                        @media only screen and (max-width: 1289px) {
                             line-height: 30px;
                             font-size: 18px;
                         }
@@ -123,7 +123,7 @@
                             list-style-type: disc;
                             padding-left: 40px;
                             margin: 15px 0px;
-                            @media only screen and (max-width: 1290px) {
+                            @media only screen and (max-width: 1289px) {
                                 padding: 0;
                             }
                         }
@@ -157,7 +157,7 @@
                             margin: 40px 0 20px;
                         }
                         .job-requirements, .job-benefits{
-                            @media only screen and (max-width: 1290px) {
+                            @media only screen and (max-width: 1289px) {
                                 padding-left: 20px;
                             }
                         }
@@ -184,7 +184,7 @@
                         }
                         button {
                             margin: 40px 0;
-                            @media only screen and (max-width: 1290px) {
+                            @media only screen and (max-width: 1289px) {
                                 width: 100%;
                                 padding: 16px 32px;
                                 margin: 35px 0;
@@ -205,7 +205,7 @@
                         margin: 0 !important;
                         pointer-events: none;
                         transition: opacity 1.75s ease, max-height 1.25s ease-in;
-                        @media only screen and (max-width: 1290px) {
+                        @media only screen and (max-width: 1289px) {
                             margin-left: -40px !important;
                             width: 120%;
                         }
@@ -219,7 +219,7 @@
                             display: flex;
                             flex-direction: column;
                             position: relative;
-                            @media only screen and (max-width: 1290px) {
+                            @media only screen and (max-width: 1289px) {
                                 padding-left: 40px;
                             }
                             .input-wrap{
@@ -228,7 +228,7 @@
                                 &:last-of-type{
                                     input, label{
                                         cursor: pointer !important;
-                                        @media only screen and (max-width: 1290px) {
+                                        @media only screen and (max-width: 1289px) {
                                             padding-left: 15px;
                                             width: 75vw;
                                             padding-right: 0px;
@@ -264,7 +264,7 @@
                                 font-family: 'Roboto';
                                 font-size: 16px;
                                 line-height: 24px;
-                                @media only screen and (max-width: 1290px) {
+                                @media only screen and (max-width: 1289px) {
                                     width: 66vw;
                                     height: 16px;
                                     padding: 15px 25px;
@@ -285,7 +285,7 @@
                                         background: #FFF;
                                         border-radius: 5px;
                                         margin-left: 20px;
-                                        @media only screen and (max-width: 1290px) {
+                                        @media only screen and (max-width: 1289px) {
                                             padding: 5px 5px;
                                             font-size: 9px;
                                         }
@@ -301,7 +301,7 @@
                                 padding: 37px 46px;
                                 transition: all 0.3s ease-out;
                                 cursor: text;
-                                @media only screen and (max-width: 1290px) {
+                                @media only screen and (max-width: 1289px) {
                                     padding: 26px 14px;
                                     font-size: 12px;
                                 }
@@ -314,7 +314,7 @@
                                 bottom: 3.5vh;
                                 right: -3vw;
                                 cursor: pointer;
-                                @media only screen and (max-width: 1290px) {
+                                @media only screen and (max-width: 1289px) {
                                     bottom: 24px;
                                     right: 15vw;
                                 }
@@ -330,12 +330,12 @@
 #email-section {
     margin: -20px 0 25px;
     width: 100%;
-    @media only screen and (max-width: 1290px) {
+    @media only screen and (max-width: 1289px) {
         width: 100vw;
     }
     .content {
         padding: 0 11vw;
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             padding: 0 20px;
         }
         .text-wrapper {
@@ -348,13 +348,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 flex-direction: column;
                 padding: 26px 26px;
                 height: 187px;
             }
             div:nth-of-type(2){
-                @media only screen and (max-width: 1290px) {
+                @media only screen and (max-width: 1289px) {
                     display: flex;
                     justify-content: center;
                 }
@@ -365,7 +365,7 @@
                 line-height: 22px;
                 letter-spacing: 0;
                 margin: 0;
-                @media only screen and (max-width: 1290px) {
+                @media only screen and (max-width: 1289px) {
                     font-size: 16px;
                 }
             }
@@ -393,7 +393,7 @@
                 height: 50px;
                 transition: all 1s ease-out;
                 transform: rotateX(45deg);
-                @media only screen and (max-width: 1290px) {
+                @media only screen and (max-width: 1289px) {
                     width: 75%;
                     display: flex;
                     justify-content: center;
@@ -419,7 +419,7 @@
                     max-width: 350px;
                     transition: all .6s ease-out;
                     transform: rotateX(0deg);
-                    @media only screen and (max-width: 1290px) {
+                    @media only screen and (max-width: 1289px) {
                         max-width: 320px;
                         margin-bottom: 15px;
                     }
@@ -460,7 +460,7 @@
         padding: 24px 96px;
         text-transform: uppercase;
         margin-bottom: 45px;
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             padding: 18px 24px;
             font-size: 9px;
         }

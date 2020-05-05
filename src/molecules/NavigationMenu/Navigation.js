@@ -32,14 +32,14 @@ class NavMenu extends Component {
                         <figure></figure>
                     </div>
                     <ul>
-                    <Link to='#anchor-1'>
+                    <Link to='#who-we-are'>
                         <li href='#wehire'>Quem somos</li>
                     </Link>
-                    <Link to='#anchor-2'>
+                    <Link to='#our-way'>
                         <li href='#wehire'>Nosso jeito de trabalhar</li>
                     </Link>
                     <li>
-                        <Link to='#section-five'>
+                        <Link to='#we-hiring'>
                         <button className='hiring-btn' href='#wehire' >We’re hiring</button>
                         </Link>
                     </li>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media only screen and (max-width: 1290px) {
+    @media only screen and (max-width: 1289px) {
         height: auto;
         margin-top: 25px;
         flex-direction: column;
@@ -14,13 +14,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             width: 100%;
         }
     }
     .left-content {
         .text-wrapper {
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 width: 90%;
             }
         }
@@ -48,7 +48,7 @@
         }
     }
     .right-content{
-        @media only screen and (max-width: 1290px) {
+        @media only screen and (max-width: 1289px) {
             margin: 20px 0 40px;
         }
         .text{
@@ -61,7 +61,7 @@
             opacity: 1;
             margin: 8px 0;
             line-height: 25px;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 width: 75%;
                 margin-left: -50px;
             }

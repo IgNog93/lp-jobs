@@ -26,7 +26,7 @@ html {
 
         nav, #section-one, #section-two {
             padding: 0 12vw;
-            @media only screen and (max-width: 1290px) {
+            @media only screen and (max-width: 1289px) {
                 padding: 0;
                 display: flex;
                 flex-direction: column-reverse;
