@@ -6,6 +6,10 @@ html {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        overflow: hidden;
+        &.scroll{
+            overflow: initial;
+        }
         #root {
             max-width: 1980px;
         }

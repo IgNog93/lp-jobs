@@ -8,8 +8,10 @@ class NavMenu extends Component {
     componentDidMount(){
         setTimeout(() => {
             const loaded = document.querySelector('#loading')
+            const scroll = document.querySelector('body')
 
             loaded.classList.add('loaded')
+            scroll.classList.add('scroll')
             ScrollAnimation.navMenu()
         }, 2000)
     }

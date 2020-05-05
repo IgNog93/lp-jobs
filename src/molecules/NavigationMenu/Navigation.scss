@@ -9,6 +9,7 @@ nav {
         z-index: 999999;
         top: 0;
         left: 0;
+        overflow-y: hidden;
         .loader-img {
             width: 90px;
             height: 90px;
@@ -19,10 +20,15 @@ nav {
             margin-left: -60px;
             background: url(../../assets/loader.svg) center center no-repeat;
             background-size: contain;
+            @media only screen and (max-width: 1290px) {
+                margin-top: -45px;
+                margin-left: -45px;
+            }
         }
         &.loaded{
             opacity: 0;
             transition: all .2s ease;
+            z-index: -1;
         }
     }
     .bkgd {

@@ -7,7 +7,7 @@ class SectionThree extends Component {
         return (
             <section id='section-three'>
                 <div className='content'>
-                <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
+                <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
                     <div className='title-wrapper'>
                         <p className='title'>nosso jeito de trabalhar</p>
                         <p className='slogan'>Gente boa, gente amiga e

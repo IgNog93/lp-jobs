@@ -1,4 +1,8 @@
 #section-three {
+    overflow: hidden;
+    @media only screen and (max-width: 1290px) {
+        width: 100vw;
+    }
     .content {
     height: 495px;
     background: transparent linear-gradient(248deg, #2F80ED 0%, #00C8AA 100%) 0% 0% no-repeat padding-box;
@@ -10,6 +14,12 @@
     align-items: center;
     @media only screen and (max-width: 1290px) {
         height: auto;
+        .parallax-inner {
+            width: 100vw;
+        }
+        .parallax-outer{
+            height: 100vh;
+        }
     }
         div {
             @media only screen and (max-width: 1290px) {
@@ -28,6 +38,7 @@
                 margin-bottom: 0;
                 @media only screen and (max-width: 1290px) {
                     margin: 40px 0 30px;
+                    width: 100vw;
                 }
             }
             .slogan{
@@ -45,6 +56,12 @@
             font-size: 16px;
             line-height: 24px;
             text-align: center;
+            @media only screen and (max-width: 1290px) {
+                width: 100vw;
+                p {
+                    padding: 0 20px;
+                }
+            }
             span {
                 font-weight: bold;
             }
