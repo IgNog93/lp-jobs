@@ -14,7 +14,7 @@ html {
         }
         button {
             cursor: pointer;
-            transition: all .1s ease-in;
+            transition: opacity .1s ease-in;
             z-index: 999;
             &:hover {
                 opacity: 0.9 !important;

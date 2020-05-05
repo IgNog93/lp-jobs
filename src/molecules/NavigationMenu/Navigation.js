@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import ScrollAnimation from '../../services/Animations'
 import './Navigation.scss'
 
 class NavMenu extends Component {
@@ -9,6 +10,7 @@ class NavMenu extends Component {
             const load = document.querySelector('#root')
 
             load.classList.remove('loading')
+            ScrollAnimation.navMenu()
         }, 500)
     }
 
@@ -31,7 +33,7 @@ class NavMenu extends Component {
                 </Link>
                 <li>
                     <Link to='#section-five'>
-                    <button href='#wehire' >We’re hiring</button>
+                    <button className='hiring-btn' href='#wehire' >We’re hiring</button>
                     </Link>
                 </li>
                 </ul>

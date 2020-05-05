@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import './Section-one.scss'
+import ScrollAnimation from '../../services/Animations'
 
 class SectionOne extends Component {
+
+    // componentDidMount(){
+    //   }
+
+
     render() {
         return (
             <section id='section-one'>
