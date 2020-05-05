@@ -32,10 +32,10 @@ class NavMenu extends Component {
                         <figure></figure>
                     </div>
                     <ul>
-                    <Link to='#section-two'>
+                    <Link to='#anchor-1'>
                         <li href='#wehire'>Quem somos</li>
                     </Link>
-                    <Link to='#section-three'>
+                    <Link to='#anchor-2'>
                         <li href='#wehire'>Nosso jeito de trabalhar</li>
                     </Link>
                     <li>

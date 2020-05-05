@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import './Section-one.scss'
-import ScrollAnimation from '../../services/Animations'
 
 class SectionOne extends Component {
-
-    // componentDidMount(){
-    //   }
-
-
     render() {
         return (
             <section id='section-one'>
@@ -18,6 +12,7 @@ class SectionOne extends Component {
                     <p className='title'>A Sami escutou você!</p>
                     <p className='text'>Você espera há muito tempo alguém que esteja junto,
                     <br/> alguém que ouça você ao cuidar da sua saúde.
+                    <span id='anchor-1'></span>
                     <br/> Você espera qualidade que possa pagar para se
                     <br/> manter saudável. Você quer orientação para decidir o
                     <br/> que é melhor, e não que decidam por você.</p>

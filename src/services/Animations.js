@@ -5,9 +5,9 @@ class ScrollAnimation {
      anime({
          targets: '.hiring-btn',
          translateY: [-150, 0],
-         duration: 1000,
-         delay: 1000,
-         easing: 'spring(1, 80, 8, 0)'
+         duration: 5,
+         delay: 500,
+         easing: 'spring(1, 100, 8, 0)'
        })
    )
 }
