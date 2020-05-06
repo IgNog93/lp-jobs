@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import ScrollAnimation from 'react-animate-on-scroll';
+import FormUpload from '../../atoms/FileUpload'
 import './Section-seven.scss'
-
-
 class SectionSeven extends Component {
     constructor(){
         super()
@@ -12,55 +11,44 @@ class SectionSeven extends Component {
           applicationForm: false,
           copyEmail: false,
           name: '',
-          linkedin: ''
+          linkedin: '',
         }
       }
-
     handleInput = e => {
     const input = e.target
     this.setState({
         [input.name]: input.value
     })
     }
-
     jobClick = () => {
         const job = document.querySelector('#job')
-
         job.classList.remove('clickable')
     }
-
     showMore = () => {
         this.setState({
             showMore: true
         })
         this.jobClick()
     }
-
     applyButton = () => {
         this.setState({
             applicationForm: true
         })
     }
-
     restartCopy = () => {
         setTimeout(() => {
             const emailCopied = document.querySelector('#email-copied')
             const emailToCopy = document.querySelector('#email-to-copy')
-
             emailCopied.classList.remove('opened')
             emailCopied.classList.add('closed')
             emailToCopy.classList.remove('closed')
             emailToCopy.classList.add('opened')
-
             this.setState({
                 copyEmail: false
             })
-
         }, 3000);
     }
-
     copyingEmail = () => {navigator.clipboard.writeText('recrutamento@oisami.com')}
-
     copyEmail = () => {
         this.setState({
             copyEmail: true
@@ -68,7 +56,6 @@ class SectionSeven extends Component {
         this.copyingEmail()
         this.restartCopy()
     }
-
     render() {
         const { showMore } = this.state
         const { applicationForm } = this.state
@@ -170,9 +157,17 @@ class SectionSeven extends Component {
                                                     <label htmlFor='linkedin'>Linkedin</label>
                                                 </div>
                                                 <div className='input-wrap'>
-                                                    <input readOnly name='cv' placeholder='Anexe seu CV'></input>
-                                                    <label htmlFor='cv'></label>
+                                                    <input
+                                                        readOnly
+                                                        type='file'
+                                                        id='cv'
+                                                        name='cv'
+                                                        placeholder='Anexe seu CV'
+                                                    >
+                                                    </input>
+                                                    <label htmlFor='cv'>Anexe seu CV</label>
                                                 </div>
+                                                {/* <FormUpload/> */}
                                                 <span></span>
                                             </form>
                                         </section>
@@ -210,5 +205,4 @@ class SectionSeven extends Component {
         )
     }
 }
-
 export default SectionSeven

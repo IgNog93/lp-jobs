@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Section-one.scss'
-
 class SectionOne extends Component {
     render() {
         return (
@@ -21,5 +20,4 @@ class SectionOne extends Component {
         )
     }
 }
-
 export default SectionOne

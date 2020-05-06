@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Section-four.scss'
-
 class SectionFour extends Component {
     render() {
         return (
@@ -57,5 +56,4 @@ class SectionFour extends Component {
         )
     }
 }
-
 export default SectionFour

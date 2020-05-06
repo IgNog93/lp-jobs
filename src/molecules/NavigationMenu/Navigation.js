@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import ScrollAnimation from '../../services/Animations'
 import './Navigation.scss'
-
 class NavMenu extends Component {
-
     componentDidMount(){
         setTimeout(() => {
             const loaded = document.querySelector('#loading')
             const scroll = document.querySelector('body')
-
             loaded.classList.add('loaded')
             scroll.classList.add('scroll')
             ScrollAnimation.navMenu()
@@ -17,7 +14,6 @@ class NavMenu extends Component {
             ScrollAnimation.sectionOneRight()
         }, 2000)
     }
-
     render() {
         return (
             <section id='nav'>
@@ -51,5 +47,4 @@ class NavMenu extends Component {
         )
     }
 }
-
 export default NavMenu

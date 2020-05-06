@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import './Section-three.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
-
 class SectionThree extends Component {
-
     render() {
         return (
             <section id='section-three'>
@@ -32,5 +30,4 @@ class SectionThree extends Component {
         )
     }
 }
-
 export default SectionThree

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Section-two.scss'
-
 class SectionTwo extends Component {
     render() {
         return (
@@ -27,5 +26,4 @@ class SectionTwo extends Component {
         )
     }
 }
-
 export default SectionTwo

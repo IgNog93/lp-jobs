@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Section-five.scss'
-
 class SectionFive extends Component {
     render() {
         return (
@@ -34,5 +33,4 @@ class SectionFive extends Component {
         )
     }
 }
-
 export default SectionFive

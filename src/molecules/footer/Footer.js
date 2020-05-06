@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Footer.scss'
-
 class Footer extends Component {
     render() {
         return (
@@ -41,5 +40,4 @@ class Footer extends Component {
         )
     }
 }
-
 export default Footer

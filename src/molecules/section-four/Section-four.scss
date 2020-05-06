@@ -106,7 +106,6 @@
                         }
                     }
             }
-
             .dot{
                 display: flex;
                 flex-direction: column;
@@ -125,13 +124,11 @@
                         position: initial;
                     }
                 }
-
                 &:hover {
                     transform: scale(1.15);
                     transition: all 0.4s ease-out;
                     line-height: 90px !important;
                 }
-
                 p {
                     text-align: center;
                     font-weight: bold;
@@ -142,7 +139,6 @@
                     opacity: 1;
                     line-height: 25px;
                 }
-
                 div {
                     width: 80px;
                     height: 80px;
@@ -154,35 +150,30 @@
                     justify-content: center;
                     align-items: center;
                 }
-
                 &:nth-child(1) {
                     figure {
                         background: transparent url('../../assets/report.svg') 0% 0% no-repeat padding-box;
                         opacity: 1;
                     }
                 }
-
                 &:nth-child(3) {
                     figure {
                         background: transparent url('../../assets/agreement.svg') 0% 0% no-repeat padding-box;
                         opacity: 1;
                     }
                 }
-
                 &:nth-child(5) {
                     figure {
                         background: transparent url('../../assets/miscellaneous.svg') 0% 0% no-repeat padding-box;
                         opacity: 1;
                     }
                 }
-
                 &:nth-child(7) {
                     figure {
                         background: transparent url('../../assets/brainstorm.svg') 0% 0% no-repeat padding-box;
                         opacity: 1;
                     }
                 }
-
                 &:nth-child(9) {
                     figure {
                         background: transparent url('../../assets/social-media.svg') 0% 0% no-repeat padding-box;

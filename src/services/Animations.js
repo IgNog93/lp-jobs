@@ -1,5 +1,4 @@
 import anime from 'animejs'
-
 class ScrollAnimation {
   static navMenu = () => (
      anime({
@@ -29,5 +28,4 @@ class ScrollAnimation {
       })
   )
 }
-
 export default ScrollAnimation
