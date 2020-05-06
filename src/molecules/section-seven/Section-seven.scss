@@ -186,8 +186,10 @@
                         }
                         button {
                             margin: 40px 0;
+                            width: 300px;
+                            padding: 16px 0;
                             @media only screen and (max-width: 1289px) {
-                                width: 100%;
+                                width: 92%;
                                 padding: 16px 32px;
                                 margin: 35px 0;
                             }
@@ -333,11 +335,11 @@
                                 width: 30px;
                                 height: 30px;
                                 position: absolute;
-                                bottom: 3.5vh;
+                                bottom: 17vh;
                                 right: -3vw;
                                 cursor: pointer;
                                 @media only screen and (max-width: 1289px) {
-                                    bottom: 24px;
+                                    bottom: 21.5vh;
                                     right: 15vw;
                                 }
                             }

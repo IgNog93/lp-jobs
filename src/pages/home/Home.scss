@@ -9,6 +9,8 @@ html {
         overflow: hidden;
         &.scroll{
             overflow: initial;
+        }
+        &.no-overflow{
             overflow-x: hidden;
         }
         #root {
@@ -24,6 +26,7 @@ html {
                 transition: all .2s ease-in-out;
             }
         }
+
         nav, #section-one, #section-two {
             padding: 0 12vw;
             @media only screen and (max-width: 1289px) {

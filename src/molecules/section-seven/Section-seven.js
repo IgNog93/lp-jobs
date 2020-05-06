@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import ScrollAnimation from 'react-animate-on-scroll';
-import FormUpload from '../../atoms/FileUpload'
+import axios from 'axios';
 import './Section-seven.scss'
 class SectionSeven extends Component {
     constructor(){
@@ -12,24 +12,44 @@ class SectionSeven extends Component {
           copyEmail: false,
           name: '',
           linkedin: '',
+          cv: '',
         }
       }
+
     handleInput = e => {
     const input = e.target
     this.setState({
         [input.name]: input.value
     })
     }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        const candidate = {
+          name: this.state.name,
+          linkedin: this.state.linkedin,
+          cv: this.state.cv,
+          apiToken: 'Yzk2OWlyYjE3MWQzNDQwMnE4OWUzYzA4'
+        };
+        axios.post(`https://www.oisami.com/apply.php`, { candidate })
+        .then(res => {
+          console.log(res);
+          console.log(res.data);
+        })
+    }
+
     jobClick = () => {
         const job = document.querySelector('#job')
         job.classList.remove('clickable')
     }
+
     showMore = () => {
         this.setState({
             showMore: true
         })
         this.jobClick()
     }
+
     applyButton = () => {
         this.setState({
             applicationForm: true
@@ -146,7 +166,7 @@ class SectionSeven extends Component {
                                             </ul>
                                         </div>
                                         <section id='application-form' className={` ${(applicationForm === true) ? 'opened' : 'closed'}`}>
-                                            <form>
+                                            <form onSubmit={ this.handleSubmit }>
                                                 <p>Preencha os dados abaixo</p>
                                                 <div className='input-wrap'>
                                                     <input className={`${(this.state.name.length > 0 ? 'active' : '')}`} name='name' id='name' onChange={this.handleInput} defaultValue={this.state.name}></input>
@@ -167,12 +187,11 @@ class SectionSeven extends Component {
                                                     </input>
                                                     <label htmlFor='cv'>Anexe seu CV</label>
                                                 </div>
-                                                {/* <FormUpload/> */}
                                                 <span></span>
+                                                <button type='submit' className={` apply-btn btn-after ${(applicationForm === true) ? 'opened' : 'closed'}`} >Candidatar-se</button>
                                             </form>
                                         </section>
                                         <button className={` apply-btn btn-before ${(applicationForm === false) ? 'opened' : 'closed'}`} onClick={() =>  this.applyButton()}>Quero me candidatar!</button>
-                                        <button className={` apply-btn btn-after ${(applicationForm === true) ? 'opened' : 'closed'}`} >Candidatar-se</button>
                                     </div>
                                 </div>
                             </li>
