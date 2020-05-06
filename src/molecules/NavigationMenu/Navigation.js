@@ -13,6 +13,8 @@ class NavMenu extends Component {
             loaded.classList.add('loaded')
             scroll.classList.add('scroll')
             ScrollAnimation.navMenu()
+            ScrollAnimation.sectionOneLeft()
+            ScrollAnimation.sectionOneRight()
         }, 2000)
     }
 

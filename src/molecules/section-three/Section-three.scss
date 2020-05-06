@@ -19,11 +19,12 @@
         }
         .parallax-outer{
             height: 100vh;
+            margin: 0;
         }
     }
         div {
             @media only screen and (max-width: 1289px) {
-                width: 90%
+                width: 100%
             }
         }
         .title-wrapper{

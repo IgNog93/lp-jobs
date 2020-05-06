@@ -59,6 +59,9 @@
         @media only screen and (max-width: 1289px) {
             margin: 0;
             text-align: center;
+            .animated {
+                opacity: 1 !important;
+            }
         }
         ul{
             list-style-type: none;

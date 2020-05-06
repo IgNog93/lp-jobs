@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './Section-four.scss'
 
 class SectionFour extends Component {
@@ -10,6 +11,7 @@ class SectionFour extends Component {
                     <p className='title-bold'>No que acreditamos?</p>
                 </div>
                 <div className='dots-wrapper'>
+                <ScrollAnimation animateIn="fadeInDown" duration='.75' delay='500'>
                     <ul className='dots'>
                         <li className='dot'>
                             <div>
@@ -46,8 +48,11 @@ class SectionFour extends Component {
                             <p>Compartilhar conhecimento é fundamental.</p>
                         </li>
                     </ul>
+                    </ScrollAnimation>
                 </div>
-                <p className='bottom-text'>Nós acreditamos nas pessoas!</p>
+                <ScrollAnimation animateIn="fadeInUp" duration='1' delay='500'>
+                    <p className='bottom-text'>Nós acreditamos nas pessoas!</p>
+                </ScrollAnimation>
             </section>
         )
     }

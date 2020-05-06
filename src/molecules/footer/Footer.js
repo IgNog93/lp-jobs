@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './Footer.scss'
 
 class Footer extends Component {
@@ -16,17 +17,25 @@ class Footer extends Component {
                 </div>
                 <div className='social-media'>
                     <p className='title'>Redes sociais</p>
+                    <ScrollAnimation animateIn="slideInRight" duration='.5'>
                     <ul>
                         <li>
-                            <figure></figure>
+                            <a href='https://www.facebook.com/oisami.saude/'>
+                                <figure></figure>
+                            </a>
                         </li>
                         <li>
-                            <figure></figure>
+                            <a href='https://www.linkedin.com/company/oisamisaude/'>
+                                <figure></figure>
+                            </a>
                         </li>
                         <li>
-                            <figure></figure>
+                            <a href='https://www.instagram.com/oisami.saude/'>
+                                <figure></figure>
+                            </a>
                         </li>
                     </ul>
+                    </ScrollAnimation>
                 </div>
             </section>
         )

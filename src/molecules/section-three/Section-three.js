@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import './Section-three.scss'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class SectionThree extends Component {
+
     render() {
         return (
             <section id='section-three'>
                 <div className='content'>
+                <ScrollAnimation animateIn="fadeIn">
                 <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
                     <div className='title-wrapper'>
                         <p className='title'>nosso jeito de trabalhar</p>
@@ -23,6 +26,7 @@ class SectionThree extends Component {
                         <p className='watermark'>nosso jeito de trabalhar</p>
                     </div>
                 </Parallax>
+                </ScrollAnimation>
                 </div>
             </section>
         )

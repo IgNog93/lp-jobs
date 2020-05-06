@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './Section-seven.scss'
 
 
@@ -76,7 +77,9 @@ class SectionSeven extends Component {
             <section id='section-seven'>
                 <div className='title-wrapper'>
                     <p className='title'>vem pra sami</p>
-                    <p className='title-bold'>Nossas vagas</p>
+                    <ScrollAnimation animateIn='swing'>
+                        <p className='title-bold'>Nossas vagas</p>
+                    </ScrollAnimation>
                 </div>
                 <a name='wehire'></a>
                 <div className='jobs-wrapper'>
@@ -181,6 +184,7 @@ class SectionSeven extends Component {
                         </ul>
                     </div>
                 </div>
+                <ScrollAnimation animateIn="fadeInUp" duration='.5'>
                 <div id='email-section'>
                     <div className='content'>
                         <div className='text-wrapper'>
@@ -201,6 +205,7 @@ class SectionSeven extends Component {
                     <button>voltar ao topo</button>
                     </Link>
                 </div>
+                </ScrollAnimation>
             </section>
         )
     }

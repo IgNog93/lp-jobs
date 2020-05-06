@@ -8,12 +8,16 @@
         margin-top: 25px;
         flex-direction: column;
     }
+    .animated {
+        min-height: 250px;
+    }
     .left-content, .right-content {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 250px;
         @media only screen and (max-width: 1289px) {
             width: 100%;
         }
@@ -48,6 +52,7 @@
         }
     }
     .right-content{
+        align-items: flex-start;
         @media only screen and (max-width: 1289px) {
             margin: 20px 0 40px;
         }
@@ -63,7 +68,7 @@
             line-height: 25px;
             @media only screen and (max-width: 1289px) {
                 width: 75%;
-                margin-left: -50px;
+                margin-left: 25px;
             }
         }
     }
