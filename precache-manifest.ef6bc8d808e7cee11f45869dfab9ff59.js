@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b8d4ee8b51867692572ef825e64ac8f",
+    "revision": "c8b400ff1b15dd9cde9282bc6d8896c2",
     "url": "/ignog93.github.io/lpjobs/index.html"
   },
   {
-    "revision": "be05ac01f9be74d9d553",
+    "revision": "b7429c16d028d3ffe0b5",
     "url": "/ignog93.github.io/lpjobs/static/css/main.b5222ecc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ignog93.github.io/lpjobs/static/js/2.9a8d0b5b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "be05ac01f9be74d9d553",
-    "url": "/ignog93.github.io/lpjobs/static/js/main.09ace61b.chunk.js"
+    "revision": "b7429c16d028d3ffe0b5",
+    "url": "/ignog93.github.io/lpjobs/static/js/main.026ef440.chunk.js"
   },
   {
     "revision": "4b74ffcafa23b2c3863e",
