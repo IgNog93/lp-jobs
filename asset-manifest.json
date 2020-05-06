@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/lp-jobs/static/css/main.bdcfa050.chunk.css",
+    "main.js": "/lp-jobs/static/js/main.09ace61b.chunk.js",
+    "main.js.map": "/lp-jobs/static/js/main.09ace61b.chunk.js.map",
+    "runtime-main.js": "/lp-jobs/static/js/runtime-main.7326ed35.js",
+    "runtime-main.js.map": "/lp-jobs/static/js/runtime-main.7326ed35.js.map",
+    "static/js/2.9a8d0b5b.chunk.js": "/lp-jobs/static/js/2.9a8d0b5b.chunk.js",
+    "static/js/2.9a8d0b5b.chunk.js.map": "/lp-jobs/static/js/2.9a8d0b5b.chunk.js.map",
+    "index.html": "/lp-jobs/index.html",
+    "precache-manifest.60b58c4c054e8c9d40b66fd8f48b8fe6.js": "/lp-jobs/precache-manifest.60b58c4c054e8c9d40b66fd8f48b8fe6.js",
+    "service-worker.js": "/lp-jobs/service-worker.js",
+    "static/css/main.bdcfa050.chunk.css.map": "/lp-jobs/static/css/main.bdcfa050.chunk.css.map",
+    "static/js/2.9a8d0b5b.chunk.js.LICENSE.txt": "/lp-jobs/static/js/2.9a8d0b5b.chunk.js.LICENSE.txt",
+    "static/media/Section-four.scss": "/lp-jobs/static/media/social-media.2238323f.svg",
+    "static/media/Section-seven.scss": "/lp-jobs/static/media/multimedia-option.11ef20e8.svg",
+    "static/media/Footer.scss": "/lp-jobs/static/media/sami-logo-w.8612b1f7.svg",
+    "static/media/Navigation.scss": "/lp-jobs/static/media/rounded-bg-lp.dd4009a4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7326ed35.js",
+    "static/js/2.9a8d0b5b.chunk.js",
+    "static/css/main.bdcfa050.chunk.css",
+    "static/js/main.09ace61b.chunk.js"
+  ]
+}
