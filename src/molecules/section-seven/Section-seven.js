@@ -195,6 +195,7 @@ class SectionSeven extends Component {
                                                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
                                             </ul>
                                         </div>
+                                        <button className={` apply-btn btn-before ${(applicationForm === false) ? 'opened' : 'closed'}`} onClick={() =>  this.applyButton()}>Quero me candidatar!</button>
                                         <section id='application-form' className={` ${(applicationForm === true) ? 'opened' : 'closed'}`}>
                                             <form onSubmit={ this.handleSubmit }>
                                                 <p>Preencha os dados abaixo</p>
@@ -223,7 +224,6 @@ class SectionSeven extends Component {
                                                 <button type='submit' className={` apply-btn btn-after ${(applicationForm === true) ? 'opened' : 'closed'}`} >Candidatar-se</button>
                                             </form>
                                         </section>
-                                        <button className={` apply-btn btn-before ${(applicationForm === false) ? 'opened' : 'closed'}`} onClick={() =>  this.applyButton()}>Quero me candidatar!</button>
                                     </div>
                                 </div>
                             </li>
