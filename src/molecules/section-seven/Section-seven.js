@@ -14,7 +14,6 @@ class SectionSeven extends Component {
           name: '',
           linkedin: '',
           cv: null,
-          formValidation: false,
         }
     }
 
@@ -27,18 +26,11 @@ class SectionSeven extends Component {
     this.setState({
         [input.name]: input.value
     })
-    this.formValidation();
-    }
-
-    formValidation = () => {
-        if (this.state.name.length > 3 && this.state.cv.name.length > 0){
-            this.setState({ formValidation: true });
-        }
     }
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if (this.state.formValidation === true) {
+        if (this.state.cv && this.state.name.length > 3) {
             const formData = new FormData();
 
             formData.set('name', this.state.name);
@@ -59,7 +51,7 @@ class SectionSeven extends Component {
             console.log(res.data);
             })
             alert('Candidatura enviada com sucesso!')
-            window.location.href='http://localhost:3001';
+            window.location.reload()
         } else {
             alert('Favor preencher corretamente')
         }
