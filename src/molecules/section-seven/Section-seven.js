@@ -30,7 +30,7 @@ class SectionSeven extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if (this.state.cv && this.state.name.length > 3) {
+        if (this.state.cv && this.state.name.length > 6 && this.state.linkedin.length > 15) {
             const formData = new FormData();
 
             formData.set('name', this.state.name);
@@ -51,7 +51,9 @@ class SectionSeven extends Component {
             console.log(res.data);
             })
             alert('Candidatura enviada com sucesso!')
-            window.location.reload()
+            this.setState({
+                applicationForm: false
+            })
         } else {
             alert('Favor preencher corretamente')
         }

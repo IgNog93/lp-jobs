@@ -207,14 +207,14 @@
                         max-height: 0px;
                         margin: 0 !important;
                         pointer-events: none;
-                        transition: opacity 1.75s ease, max-height 1.25s ease-in;
+                        transition: opacity .5s ease, max-height 1s ease;
                         @media only screen and (max-width: 1289px) {
                             margin-left: -40px !important;
                             width: 120%;
                         }
                         &.opened {
                             opacity: 1;
-                            transition: opacity 1.75s ease, max-height 1.25s ease-in;
+                            transition: opacity 1.25s ease-in, max-height 1.25s ease-in;
                             max-height: 2000px;
                             pointer-events: initial;
                         }
