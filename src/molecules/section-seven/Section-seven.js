@@ -31,7 +31,7 @@ class SectionSeven extends Component {
     }
 
     formValidation = () => {
-        if (this.state.name.length > 3){
+        if (this.state.name.length > 3 && this.state.cv.name.length > 0){
             this.setState({ formValidation: true });
         }
     }
