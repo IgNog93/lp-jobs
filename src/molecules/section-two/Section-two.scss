@@ -1,6 +1,10 @@
 #section-two{
     display: flex;
     height: 350px;
+    overflow: hidden;
+    &*{
+        overflow: hidden;
+    }
     @media only screen and (max-width: 1289px) {
         flex-direction: column !important;
         height: auto !important;

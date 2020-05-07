@@ -14,6 +14,7 @@ class SectionSeven extends Component {
           name: '',
           linkedin: '',
           cv: null,
+          formValidation: false,
         }
     }
 
@@ -26,29 +27,42 @@ class SectionSeven extends Component {
     this.setState({
         [input.name]: input.value
     })
+    this.formValidation();
+    }
+
+    formValidation = () => {
+        if (this.state.name.length > 3){
+            this.setState({ formValidation: true });
+        }
     }
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const formData = new FormData();
+        if (this.state.formValidation === true) {
+            const formData = new FormData();
 
-        formData.set('name', this.state.name);
-        formData.set('linkedin', this.state.linkedin);
-        formData.append('cv', this.state.cv);
-        formData.set('apiToken', 'Yzk2OWIyYjE3MWQzNDQwMmE4OWUzYzA4');
+            formData.set('name', this.state.name);
+            formData.set('linkedin', this.state.linkedin);
+            formData.append('cv', this.state.cv);
+            formData.set('apiToken', 'Yzk2OWIyYjE3MWQzNDQwMmE4OWUzYzA4');
 
-        console.log(formData)
-        console.log(this.state.cv);
+            console.log(formData)
+            console.log(this.state.cv);
 
-        axios({
-            method: 'post',
-            url: 'https://www.oisami.com/apply.php',
-            data: formData,
-        })
-        .then(res => {
-          console.log(res);
-          console.log(res.data);
-        })
+            axios({
+                method: 'post',
+                url: 'https://www.oisami.com/apply.php',
+                data: formData,
+            })
+            .then(res => {
+            console.log(res);
+            console.log(res.data);
+            })
+            alert('Candidatura enviada com sucesso!')
+            window.location.href='http://localhost:3001';
+        } else {
+            alert('Favor preencher corretamente')
+        }
     }
 
     fileData = () => {
@@ -64,8 +78,7 @@ class SectionSeven extends Component {
     };
 
     jobClick = () => {
-        const job = document.querySelector('#job')
-        job.classList.remove('clickable')
+        document.querySelector('#job').classList.remove('clickable')
     }
 
     showMore = () => {
@@ -212,8 +225,8 @@ class SectionSeven extends Component {
                                                     >
                                                     </input>
                                                     <label htmlFor='cv'>Anexe seu CV</label>
+                                                    <span></span>
                                                 </div>
-                                                <span></span>
                                                 {this.fileData()}
                                                 <button type='submit' className={` apply-btn btn-after ${(applicationForm === true) ? 'opened' : 'closed'}`} >Candidatar-se</button>
                                             </form>

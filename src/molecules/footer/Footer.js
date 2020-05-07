@@ -5,6 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <section id='footer'>
+            <ScrollAnimation animateIn="fadeIn" duration='1'>
                 <div className='logo'>
                     <figure></figure>
                 </div>
@@ -16,7 +17,6 @@ class Footer extends Component {
                 </div>
                 <div className='social-media'>
                     <p className='title'>Redes sociais</p>
-                    <ScrollAnimation animateIn="slideInRight" duration='.5'>
                     <ul>
                         <li>
                             <a href='https://www.facebook.com/oisami.saude/'>
@@ -34,8 +34,8 @@ class Footer extends Component {
                             </a>
                         </li>
                     </ul>
-                    </ScrollAnimation>
                 </div>
+                </ScrollAnimation>
             </section>
         )
     }

@@ -12,7 +12,7 @@ class NavMenu extends Component {
             ScrollAnimation.navMenu()
             ScrollAnimation.sectionOneLeft()
             ScrollAnimation.sectionOneRight()
-        }, 2000)
+        }, 2500)
     }
     render() {
         return (

@@ -7,14 +7,14 @@ class SectionFive extends Component {
         return (
             <section id='section-five'>
                 <span id='we-hiring'></span>
-                <ScrollAnimation animateIn="fadeInDown" duration='1' delay='500'>
+                <ScrollAnimation animateIn="fadeInDown" duration='1' delay='200'>
                 <div className='title-wrapper'>
                     <p className='title'>vem pra sami</p>
                         <p className='title-bold'>We’re hiring!</p>
                 </div>
                 </ScrollAnimation>
                 <div className='text'>
-                <ScrollAnimation animateIn="fadeIn" delay='500'>
+                <ScrollAnimation animateIn="fadeIn" delay='200'>
                     <p>Estamos formando <span>um dos melhores times do Brasil</span> para democratizar o acesso à
                     <br/> Saúde e torná-la mais humana e simples para todos. Se você tem paixão pela vida e
                     <br/> pelo trabalho, gosta de atuar em ambientes em constantes mudanças e se importa
@@ -22,7 +22,7 @@ class SectionFive extends Component {
                     </p>
                 </ScrollAnimation>
                 </div>
-                <ScrollAnimation animateIn="bounceInUp" duration='1' delay='500'>
+                <ScrollAnimation animateIn="fadeInUp" duration='1' delay='200'>
                     <div className='btn-wrapper'>
                         <Link to='#section-seven'>
                             <button>Nossas vagas</button>
