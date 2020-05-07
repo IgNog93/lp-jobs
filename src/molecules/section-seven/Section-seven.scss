@@ -343,6 +343,17 @@
                                     right: 15vw;
                                 }
                             }
+                            .upload-details {
+                                padding: 0px 15px;
+                                margin: 0;
+                                &.no-file{
+                                    color:#e01e5a;
+                                }
+                                @media only screen and (max-width: 1289px) {
+                                    text-align: center;
+                                    margin-right: 30px;
+                                }
+                            }
                         }
                     }
                 }

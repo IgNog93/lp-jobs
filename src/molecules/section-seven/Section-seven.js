@@ -3,6 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from 'axios';
 import './Section-seven.scss'
+
 class SectionSeven extends Component {
     constructor(){
         super()
@@ -12,9 +13,13 @@ class SectionSeven extends Component {
           copyEmail: false,
           name: '',
           linkedin: '',
-          cv: '',
+          cv: null,
         }
-      }
+    }
+
+    onFileChange = event => {
+    this.setState({ cv: event.target.files[0] });
+    };
 
     handleInput = e => {
     const input = e.target
@@ -25,18 +30,38 @@ class SectionSeven extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const candidate = {
-          name: this.state.name,
-          linkedin: this.state.linkedin,
-          cv: this.state.cv,
-          apiToken: 'Yzk2OWlyYjE3MWQzNDQwMnE4OWUzYzA4'
-        };
-        axios.post(`https://www.oisami.com/apply.php`, { candidate })
+        const formData = new FormData();
+
+        formData.set('name', this.state.name);
+        formData.set('linkedin', this.state.linkedin);
+        formData.append('cv', this.state.cv);
+        formData.set('apiToken', 'Yzk2OWIyYjE3MWQzNDQwMmE4OWUzYzA4');
+
+        console.log(formData)
+        console.log(this.state.cv);
+
+        axios({
+            method: 'post',
+            url: 'https://www.oisami.com/apply.php',
+            data: formData,
+        })
         .then(res => {
           console.log(res);
           console.log(res.data);
         })
     }
+
+    fileData = () => {
+        if (this.state.cv) {
+            return (
+                <p className='upload-details'>Arquivo adicionado: {this.state.cv.name}</p>
+            );
+        } else {
+            return (
+                <p className='upload-details no-file'>Nenhum arquivo adicionado</p>
+            );
+        }
+    };
 
     jobClick = () => {
         const job = document.querySelector('#job')
@@ -183,11 +208,13 @@ class SectionSeven extends Component {
                                                         id='cv'
                                                         name='cv'
                                                         placeholder='Anexe seu CV'
+                                                        onChange={this.onFileChange}
                                                     >
                                                     </input>
                                                     <label htmlFor='cv'>Anexe seu CV</label>
                                                 </div>
                                                 <span></span>
+                                                {this.fileData()}
                                                 <button type='submit' className={` apply-btn btn-after ${(applicationForm === true) ? 'opened' : 'closed'}`} >Candidatar-se</button>
                                             </form>
                                         </section>
