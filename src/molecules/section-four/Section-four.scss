@@ -1,6 +1,7 @@
 #section-four {
     height: 500px;
     padding: 50px 0;
+    overflow: hidden;
     @media only screen and (max-width: 1289px) {
         padding: 0;
         display: flex;
@@ -8,7 +9,7 @@
         align-items: center;
         height: auto;
         .animated {
-            transform: translateX(-1000px);
+            transform: translateX(600px);
             opacity: 0;
             &.fadeInDown {
                 opacity: 1 !important;
@@ -16,6 +17,7 @@
                 animation-duration: 0 !important;
                 transform: translateX(0);
                 transition: all .6s ease-out, opacity 1s ease-out;
+
             }
         }
     }

@@ -170,15 +170,15 @@
                         max-height: 0px;
                         margin: 0 !important;
                         pointer-events: none;
-                        transition: opacity 1.75s ease, max-height 2s linear;
+                        transition: opacity 1.5s ease, max-height 1.75s linear;
                         &.opened {
                             opacity: 1;
-                            transition: opacity 1.75s ease, max-height 2s linear;
+                            transition: opacity 1.5s ease, max-height 1.75s linear;
                             max-height: 2000px;
                             pointer-events: initial;
                             div {
                                 opacity: 1;
-                                transition: opacity 1.75s ease, max-height 2s linear;
+                                transition: opacity 1.5s ease, max-height 1.75s linear;
                                 max-height: initial;
                                 pointer-events: initial;
                                 margin-top: 25px !important;
