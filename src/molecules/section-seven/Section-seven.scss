@@ -553,6 +553,7 @@
                     justify-content: center;
                     font-size: 12px;
                     height: auto;
+                    cursor: pointer !important;
                 }
 
                 &:focus {
@@ -565,7 +566,7 @@
 
                     span {
                         background: url(../../assets/correct.svg) center center no-repeat;
-                        background-size: contain;
+                        background-size: auto;
                         padding: 13px;
                         margin-right: 20px;
                     }

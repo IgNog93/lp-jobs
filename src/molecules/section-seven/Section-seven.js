@@ -31,8 +31,7 @@
 
         handleSubmit = (event) => {
             event.preventDefault();
-            // this.state.cv.type === 'application/pdf' && 
-            if (this.state.name.length > 6 && this.state.linkedin.length > 15) {
+            if (this.state.cv.type === 'application/pdf' && this.state.name.length > 6 && this.state.linkedin.length > 15) {
                 const formData = new FormData();
 
                 formData.set('name', this.state.name);
