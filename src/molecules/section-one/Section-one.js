@@ -14,7 +14,7 @@ class SectionOne extends Component {
                 que possa pagar para se manter saudável.</p>
                 <p class="text">Você quer orientação para decidir o que é melhor, e não que decidam por você.
                 A Sami sabe que cuidar de pessoas vai muito além da medicina.
-                É mais do que dar o remédio, é entender o que machuca. É ouvir antes de falar.</p>
+                É mais do que dar o remédio, é entender o que machuca.<br/>É ouvir antes de falar.</p>
                 </div>
             </section>
         )
