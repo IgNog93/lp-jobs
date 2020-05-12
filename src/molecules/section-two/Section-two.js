@@ -14,10 +14,10 @@ class SectionTwo extends Component {
                 <div className='right-content'>
                 <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" duration='1'>
                     <p className='text'>Estamos reunindo as melhores práticas da Medicina,
-                    <br/> repensando conceitos ultrapassados e investindo em bastante
-                    <br/> tecnologia. E com muita, mas muita humildade e humanidade,
+                    <br/> repensando conceitos antigos e investindo em bastante
+                    <br/> tecnologia. E com muita, mas muita humildade e humanidade.
                     <span id='our-way'></span>
-                    <br/> vamos oferecer um serviço de ponta e uma experiência
+                    <br/> Vamos oferecer um serviço de ponta e uma experiência
                     <br/> marcante com menor investimento para que mais pessoas
                     <br/> tenham acesso à Saúde.</p>
                 </ScrollAnimation>
