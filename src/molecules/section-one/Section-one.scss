@@ -2,12 +2,15 @@
     display: flex;
     height: 500px;
     align-items: center;
+    margin-bottom: 50px;
     @media only screen and (max-width: 1289px) {
         justify-content: flex-end !important;
         height: 350px;
+        margin-bottom: 0;
     }
     @media only screen and (max-width: 350px) {
         height: 390px;
+        margin-bottom: 0;
     }
     div {
         width: 50%;
@@ -48,6 +51,12 @@
                 text-align: center;
                 line-height: 27px;
                 padding: 0 15px !important;
+            }
+            @media only screen and (min-width: 1620px) {
+                padding-right: 35px;
+            }
+            @media only screen and (min-width: 1820px) {
+                padding-right: 85px;
             }
         }
     }

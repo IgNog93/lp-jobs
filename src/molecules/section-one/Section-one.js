@@ -11,10 +11,10 @@ class SectionOne extends Component {
                 <p class="title">A Sami escutou você!</p>
                 <p class="text">Você sempre quis ter alguém que te ouça de verdade
                 na hora de cuidar da sua saúde. Você sempre quis qualidade
-                que possa pagar para se manter saudável.</p>
-                <p class="text">Você quer orientação para decidir o que é melhor, e não que decidam por você.
+                que possa pagar para se manter saudável.
+                Você quer orientação para decidir o que é melhor, e não que decidam por você.
                 A Sami sabe que cuidar de pessoas vai muito além da medicina.
-                É mais do que dar o remédio, é entender o que machuca.<br/>É ouvir antes de falar.</p>
+                É mais do que dar o remédio, é entender o que machuca. É ouvir antes de falar.</p>
                 </div>
             </section>
         )
