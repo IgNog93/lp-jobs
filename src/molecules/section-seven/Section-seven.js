@@ -424,17 +424,17 @@
                                         <div className={`more-info`}>
                                             <div className='job-description'>
                                                 <p className='title'>Descrição da vaga</p>
-                                                <p className='text'>"Garantir a entrega dos processos seletivos da área de recrutamento e seleção – desde alinhamento de perfil, triagem de currículos, agendamento de entrevistas, aplicação e análise de testes, oferta e documentação
-                                                    Gestão do processo seletivo de ponta a ponta
-                                                    Apoiar as áreas de negócios no processo seletivo alinhados aos objetivos estratégicos da companhia
+                                                <p className='text'>Garantir a entrega dos processos seletivos da área de recrutamento e seleção – desde alinhamento de perfil, triagem de currículos, agendamento de entrevistas, aplicação e análise de testes, oferta e documentação.
+                                                    Gestão do processo seletivo de ponta a ponta.
+                                                    Apoiar as áreas de negócios no processo seletivo alinhados aos objetivos estratégicos da companhia.
                                                     Fornecer apoio as áreas de negócio na tomada de decisão no processo seletivo.
-                                                    Auxiliar no desenvolvimento de programas e projetos de melhoria para área de recrutamento e seleção"
+                                                    Auxiliar no desenvolvimento de programas e projetos de melhoria para área de recrutamento e seleção.
                                                 </p>
                                             </div>
                                             <div className='job-requirements'>
                                                 <p className='title'>Requisitos</p>
                                                 <ul className='text'>
-                                                    <li>"Experiência anterior com recrutamento e seleção</li>
+                                                    <li>Experiência anterior com recrutamento e seleção</li>
                                                     <li>Experiência em startups ou empresas de tecnologia é diferencial</li>
                                                     <li>Inglês avançado</li>
                                                 </ul>

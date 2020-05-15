@@ -8,12 +8,13 @@ class SectionOne extends Component {
                     <figure></figure>
                 </div>
                 <div className='content'>
-                    <p className='title'>A Sami escutou você!</p>
-                    <p className='text'>Você espera há muito tempo alguém que esteja junto,
-                    <br/> alguém que ouça você ao cuidar da sua saúde.</p>
-                    <p className='text'>Você espera qualidade que possa pagar para se
-                    <br/> manter saudável. Você quer orientação para decidir o
-                    <br/> que é melhor, e não que decidam por você.</p>
+                <p class="title">A Sami escutou você!</p>
+                <p class="text">Você sempre quis ter alguém que te ouça de verdade
+                na hora de cuidar da sua saúde. Você sempre quis qualidade
+                que possa pagar para se manter saudável.
+                Você quer orientação para decidir o que é melhor, e não que decidam por você.
+                A Sami sabe que cuidar de pessoas vai muito além da medicina.
+                É mais do que dar o remédio, é entender o que machuca. É ouvir antes de falar.</p>
                 </div>
             </section>
         )

@@ -16,6 +16,7 @@
         min-height: 250px;
         @media only screen and (max-width: 1289px) {
             width: 100%;
+            min-height: unset;
         }
     }
     .left-content, .right-content {
@@ -27,6 +28,7 @@
         min-height: 250px;
         @media only screen and (max-width: 1289px) {
             width: 100%;
+            min-height: 175px;
         }
     }
     .left-content {
