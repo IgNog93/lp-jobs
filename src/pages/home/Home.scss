@@ -23,10 +23,11 @@ html {
             &:hover {
                 opacity: 0.9 !important;
                 box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
-                transition: all .2s ease-in-out;
+                transition: all .2s ease-out;
             }
         }
         @media only screen and (max-width: 1289px) {
+            letter-spacing: -0.3px !important;
             section {
                 overflow: hidden;
             }

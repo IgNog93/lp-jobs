@@ -281,7 +281,7 @@
                             opacity: 1;
                             z-index: initial;
                             transition: opacity 1.25s ease-in, max-height 1.25s ease-in;
-                            max-height: 2000px;
+                            max-height: unset;
                             pointer-events: initial;
                             .input-wrap{
                                 z-index: 1;

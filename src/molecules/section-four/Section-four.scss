@@ -66,6 +66,7 @@
             align-items: center;
             position: relative;
             @media only screen and (max-width: 1289px) {
+                padding-right: 30px;
                 display: block;
             }
             span {
@@ -107,6 +108,9 @@
                         @media only screen and (min-width: 1600px) {
                             left: 63%;
                         }
+                        @media only screen and (min-width: 1891px) {
+                            left: 65%;
+                        }
                     }
             }
             .dot{
@@ -116,6 +120,7 @@
                 align-items: center;
                 text-align: center;
                 margin: 0 3vw;
+                margin-bottom: 0;
                 transition: all 0.2s linear;
                 @media only screen and (max-width: 1289px) {
                     margin: 50px;
@@ -128,9 +133,14 @@
                     }
                 }
                 &:hover {
-                    transform: scale(1.15);
-                    transition: all 0.4s ease-out;
-                    line-height: 90px !important;
+                    div {
+                        transform: scale(1.15);
+                        transition: all 0.4s ease-out;
+                        line-height: 90px !important;
+                    }
+                    p {
+                        filter: brightness(0.5);
+                    }
                 }
                 p {
                     text-align: center;
@@ -141,6 +151,7 @@
                     color: #707070;
                     opacity: 1;
                     line-height: 25px;
+                    margin-top: 20px;
                 }
                 div {
                     width: 80px;

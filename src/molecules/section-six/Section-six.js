@@ -9,7 +9,7 @@ class SectionSix extends Component {
                 <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" duration='1' delay='500'>
                     <div className='text-wrapper'>
                         <p className='title'>Somos uma startup</p>
-                        <p className='text'>Crie uma história e
+                        <p className='text'>Crie uma história em
                         <br/> uma empresa da qual
                         <br/> possa se orgulhar!
                         </p>

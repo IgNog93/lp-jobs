@@ -48,7 +48,7 @@
                 margin-top: 0;
                 @media only screen and (max-width: 1289px) {
                     text-align: left;
-                    padding-left: 20px;
+                    padding-left: 16px;
                     width: 90%;
                 }
             }
@@ -60,7 +60,8 @@
             @media only screen and (max-width: 1289px) {
                 width: 100vw;
                 p {
-                    padding: 0 20px;
+                    padding: 0 16px;
+                    text-align: left;
                 }
             }
             span {
@@ -83,7 +84,7 @@
                 font-family: Montserrat, sans-serif;
                 font-weight: 700;
                 @media only screen and (max-width: 1289px) {
-                    font-size: 72px;
+                    font-size: 74px;
                     line-height: 72px;
                 }
                 @media only screen and (max-width: 350px) {
