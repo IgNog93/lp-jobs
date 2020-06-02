@@ -31,7 +31,7 @@
 
         handleSubmit = (event) => {
             event.preventDefault();
-            if (this.state.cv.type === 'application/pdf' && this.state.name.length > 6 && this.state.linkedin.length > 15) {
+            if (this.state.name.length > 6 && this.state.linkedin.length > 15) {
                 const formData = new FormData();
 
                 formData.set('name', this.state.name);
@@ -274,10 +274,10 @@
                                             <div className='job-description'>
                                                 <p className='title'>Descrição da vaga</p>
                                                 <p className='text'>Prezar pela experiência incrível para os usuários.
-                                                    Integração com as APIs
-                                                    Desenvolvimento de transições e efeitos com css
-                                                    interfaces responsivas
-                                                    Comunicação com o time de Design para compilarem as interações
+                                                    Integração com as APIs.
+                                                    Desenvolvimento de transições e efeitos com css.
+                                                    interfaces responsivas.
+                                                    Comunicação com o time de Design para compilarem as interações.
                                                 </p>
                                             </div>
                                             <div className='job-requirements'>
@@ -347,11 +347,11 @@
                                         <div className={`more-info`}>
                                             <div className='job-description'>
                                                 <p className='title'>Descrição da vaga</p>
-                                                <p className='text'>Montar uma API seguras e rápidas, de facil manutenção para os novos desenvolvedores
-                                                    Montar o banco de dados
-                                                    Comunicação com o front End
-                                                    Alinhar contrato de API com o front End
-                                                    Autenticação
+                                                <p className='text'>Montar APIs seguras e rápidas, de fácil manutenção para os novos desenvolvedores.
+                                                    Montar o banco de dados.
+                                                    Comunicação com o front End.
+                                                    Alinhar contrato de API com o front End.
+                                                    Autenticação.
                                                 </p>
                                             </div>
                                             <div className='job-requirements'>
