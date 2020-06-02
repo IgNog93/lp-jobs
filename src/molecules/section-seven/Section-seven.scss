@@ -264,7 +264,7 @@
                         margin: 0 !important;
                         z-index: -1;
                         pointer-events: none;
-                        transition: opacity .5s ease, max-height 1s ease;
+                        transition: opacity .5s ease, max-height 2s ease;
 
                         &.closed {
                             form {
@@ -280,7 +280,7 @@
                         &.opened {
                             opacity: 1;
                             z-index: initial;
-                            transition: opacity 1.25s ease-in, max-height 1.25s ease-in;
+                            transition: opacity 1.25s ease-in, max-height 2s ease-in;
                             max-height: unset;
                             pointer-events: initial;
                             .input-wrap{
@@ -405,6 +405,7 @@
                                     label {
                                         cursor: pointer !important;
                                         color: #A3A3A3;
+                                        padding: 20px 45px 20px;
 
                                         @media only screen and (max-width: 1289px) {
                                             padding-left: 15px;

@@ -82,6 +82,14 @@
             opacity: 1;
             margin: 8px 0;
             line-height: 25px;
+            @media only screen and (min-width: 1289px) {
+                &:nth-of-type(1){
+                    width: 54%;
+                }
+                &:nth-of-type(2){
+                    width: 53%;
+                }
+            }
             @media only screen and (max-width: 1289px) {
                 width: 80%;
                 margin: 16px 0;
