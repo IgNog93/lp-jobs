@@ -15,6 +15,7 @@
             name: '',
             linkedin: '',
             cv: null,
+            position: ''
             }
         }
 
@@ -30,12 +31,15 @@
         }
 
         handleSubmit = (event) => {
+            const target = event.target
             event.preventDefault();
+            console.log()
             if (this.state.name.length > 6 && this.state.linkedin.length > 15) {
                 const formData = new FormData();
 
                 formData.set('name', this.state.name);
                 formData.set('linkedin', this.state.linkedin);
+                formData.set('position', this.state.position);
                 formData.append('cv', this.state.cv);
                 formData.set('apiToken', 'Yzk2OWIyYjE3MWQzNDQwMmE4OWUzYzA4');
 
@@ -75,9 +79,12 @@
         showMore = e => {
             e.stopPropagation()
             e.cancelBubble = true
-                    const target = e.target
-                    const roleElement = $(target).parents('.job-role').get(0)
-                    roleElement.nextSibling.classList.toggle('opened')
+                const target = e.target
+                const roleElement = $(target).parents('.job-role').get(0)
+                roleElement.nextSibling.classList.toggle('opened')
+
+                const position = target.innerText
+                this.setState({ position: position });
         }
 
         applyButton = () => {

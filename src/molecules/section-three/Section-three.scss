@@ -49,7 +49,19 @@
                 @media only screen and (max-width: 1289px) {
                     text-align: left;
                     padding-left: 16px;
+                    width: 85%;
+                }
+                @media only screen and (max-width: 400px) {
+                    text-align: left;
+                    padding-left: 16px;
                     width: 90%;
+                }
+                @media only screen and (max-width: 330px) {
+                    text-align: left;
+                    padding-left: 16px;
+                    width: 85%;
+                    font-size: 34px;
+                    line-height: normal;
                 }
             }
         }
@@ -62,6 +74,14 @@
                 p {
                     padding: 0 16px;
                     text-align: center;
+                }
+            }
+            @media only screen and (max-width: 330px) {
+                p {
+                    padding: 0 16px;
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: normal;
                 }
             }
             span {

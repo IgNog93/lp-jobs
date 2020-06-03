@@ -37,6 +37,9 @@
                 letter-spacing: 0;
                 margin: 0;
                 line-height: 45px;
+                @media only screen and (max-width: 330px) {
+                    font-size: 32px !important;
+                }
             }
         }
     }
@@ -222,14 +225,14 @@
 
                         &.opened {
                             opacity: 1;
-                            transition: opacity 1.5s ease, max-height 1.75s linear;
+                            transition: opacity 1.5s ease, max-height 1.5s ease-out;
                             max-height: 2000px;
                             z-index: 1;
                             pointer-events: initial;
 
                             div {
                                 opacity: 1;
-                                transition: opacity 1.5s ease, max-height 1.75s linear;
+                                transition: opacity 1.5s ease, max-height 1.5s ease-out;
                                 max-height: initial;
                                 pointer-events: initial;
                                 margin-top: 25px !important;
@@ -280,7 +283,7 @@
                         &.opened {
                             opacity: 1;
                             z-index: initial;
-                            transition: opacity 2s ease-out, max-height 1.5s ease-out;
+                            transition: opacity 2s ease-out, max-height 1s ease-out;
                             max-height: 1000px;
                             pointer-events: initial;
                             .input-wrap{
