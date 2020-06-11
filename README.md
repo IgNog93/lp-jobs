@@ -1,6 +1,6 @@
 Single Page - Start-up landing page.
 
-![Screenshot](build/PrintScreen.png)
+![Screenshot](PrintScreen.png)
 
 ## Available Scripts
 In the project directory, you can run:
