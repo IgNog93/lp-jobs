@@ -1,4 +1,4 @@
-# Single Page - Start-up landing page.
+## Single Page - Start-up landing page.
 <br/>
 ![Screenshot](PrintScreen.png)
 <br/>
