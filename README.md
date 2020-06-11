@@ -1,6 +1,6 @@
 Single Page - Start-up landing page.
 
-<img src='./build/PrintScreen.png'>
+![Screenshot](build/PrintScreen.png)
 
 ## Available Scripts
 In the project directory, you can run:
