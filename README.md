@@ -1,7 +1,11 @@
-Single Page - Start-up landing page.
-
+#Single Page - Start-up landing page.
+<br/>
 ![Screenshot](PrintScreen.png)
-
+<br/>
+<br/>
+<br/>
+![Screenshot](PrintScreen.png)
+<br/>
 ## Available Scripts
 In the project directory, you can run:
 ### `npm start`
