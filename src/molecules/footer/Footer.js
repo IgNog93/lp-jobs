@@ -19,7 +19,7 @@ class Footer extends Component {
                     <p className='title'>Redes sociais</p>
                     <ul>
                         <li>
-                            <a rel='noopener noreferrer' target="_blank" href='https://www.facebook.com/oisami.saude/'>
+                            <a rel='noopener noreferrer' target="_blank" href='https://www.facebook.com/samisaudeoficial/'>
                                 <figure></figure>
                             </a>
                         </li>
