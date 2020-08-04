@@ -24,9 +24,9 @@ class SectionFive extends Component {
                 </div>
                 <ScrollAnimation animateIn="fadeInUp" duration='1' delay='200'>
                     <div className='btn-wrapper'>
-                        <Link to='#section-seven'>
+                        <a href='https://oisami.gupy.io/'>
                             <button>Nossas vagas</button>
-                        </Link>
+                        </a>
                     </div>
                 </ScrollAnimation>
             </section>
